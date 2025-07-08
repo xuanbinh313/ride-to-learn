@@ -1,0 +1,8 @@
+certifi==2025.6.15
+charset-normalizer==3.4.2
+click==8.1.8
+gTTS==2.5.4
+idna==3.10
+pydub==0.25.1
+requests==2.32.4
+urllib3==2.5.0
