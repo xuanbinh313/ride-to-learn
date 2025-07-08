@@ -1,2 +1,5 @@
 assets
 .venv
+build
+dist
+*.spec

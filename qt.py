@@ -34,6 +34,7 @@ class ToeicEditor(QWidget):
         # Bảng nhập đoạn
         self.table = QTableWidget(0, 4)
         self.table.setHorizontalHeaderLabels(["Start", "End", "Translation", "Pause (s)"])
+        self.table.setEditTriggers(QTableWidget.AllEditTriggers)  # ✅ Click là nhập được
         layout.addWidget(self.table)
 
         # Nút thêm dòng
@@ -41,14 +42,22 @@ class ToeicEditor(QWidget):
         btn_add.clicked.connect(self.add_row)
         layout.addWidget(btn_add)
 
-        # Nút xuất JSON và tạo audio
+        # Nút load, export, process
         btn_row = QHBoxLayout()
+
+        btn_load = QPushButton("🗂 Đọc JSON")
+        btn_load.clicked.connect(self.load_json)
+
         btn_export = QPushButton("💾 Xuất JSON")
         btn_export.clicked.connect(self.export_json)
+
         btn_process = QPushButton("🎧 Tạo file audio")
         btn_process.clicked.connect(self.process_audio)
+
+        btn_row.addWidget(btn_load)
         btn_row.addWidget(btn_export)
         btn_row.addWidget(btn_process)
+
         layout.addLayout(btn_row)
 
         self.setLayout(layout)
@@ -63,6 +72,47 @@ class ToeicEditor(QWidget):
         file, _ = QFileDialog.getOpenFileName(self, "Chọn file MP3", "", "MP3 Files (*.mp3)")
         if file:
             self.mp3_input.setText(file)
+
+    def load_json(self):
+        file_path, _ = QFileDialog.getOpenFileName(self, "Chọn file JSON", "", "JSON Files (*.json)")
+        if not file_path:
+            return
+
+        try:
+            with open(file_path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+
+            # Lấy thông tin bài
+            first = data[0]
+            self.name_input.setText(first.get("name", ""))
+
+            # Xóa bảng cũ
+            self.table.setRowCount(0)
+
+            for seg in first["children"]:
+                row = self.table.rowCount()
+                self.table.insertRow(row)
+                self.table.setItem(row, 0, QTableWidgetItem(seg["start"]))
+                self.table.setItem(row, 1, QTableWidgetItem(seg["end"]))
+                self.table.setItem(row, 2, QTableWidgetItem(seg["translation"]))
+                self.table.setItem(row, 3, QTableWidgetItem(str(seg["pause_after"])))
+            
+            QMessageBox.information(self, "✅ Thành công", f"Đã load {len(first['children'])} đoạn từ file.")
+        except Exception as e:
+            QMessageBox.critical(self, "❌ Lỗi", f"Không đọc được file JSON:\n{str(e)}")
+
+    def export_json(self):
+        try:
+            segments = self.get_segments()
+        except Exception as e:
+            QMessageBox.warning(self, "Lỗi", str(e))
+            return
+
+        save_path, _ = QFileDialog.getSaveFileName(self, "Lưu JSON", f"{segments[0]['name']}.json", "JSON Files (*.json)")
+        if save_path:
+            with open(save_path, "w", encoding="utf-8") as f:
+                json.dump(segments, f, ensure_ascii=False, indent=2)
+            QMessageBox.information(self, "✅ Thành công", f"Đã lưu JSON tại:\n{save_path}")
 
     def get_segments(self):
         children = []
@@ -84,19 +134,6 @@ class ToeicEditor(QWidget):
             "name": self.name_input.text(),
             "children": children
         }]
-
-    def export_json(self):
-        try:
-            segments = self.get_segments()
-        except Exception as e:
-            QMessageBox.warning(self, "Lỗi", str(e))
-            return
-
-        save_path, _ = QFileDialog.getSaveFileName(self, "Lưu JSON", f"{segments[0]['name']}.json", "JSON Files (*.json)")
-        if save_path:
-            with open(save_path, "w", encoding="utf-8") as f:
-                json.dump(segments, f, ensure_ascii=False, indent=2)
-            QMessageBox.information(self, "✅ Thành công", f"Đã lưu JSON tại:\n{save_path}")
 
     def time_to_ms(self, tstr):
         try:
