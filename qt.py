@@ -34,30 +34,30 @@ class ToeicEditor(QWidget):
         # Bảng nhập đoạn
         self.table = QTableWidget(0, 4)
         self.table.setHorizontalHeaderLabels(["Start", "End", "Translation", "Pause (s)"])
-        self.table.setEditTriggers(QTableWidget.AllEditTriggers)  # ✅ Click là nhập được
+        self.table.setEditTriggers(QTableWidget.AllEditTriggers)
         layout.addWidget(self.table)
 
-        # Nút thêm dòng
+        # Nút Thêm và Xóa dòng
+        btn_row_control = QHBoxLayout()
         btn_add = QPushButton("➕ Thêm dòng")
         btn_add.clicked.connect(self.add_row)
-        layout.addWidget(btn_add)
+        btn_delete = QPushButton("🗑 Xóa dòng")
+        btn_delete.clicked.connect(self.delete_row)
+        btn_row_control.addWidget(btn_add)
+        btn_row_control.addWidget(btn_delete)
+        layout.addLayout(btn_row_control)
 
-        # Nút load, export, process
+        # Nút Load JSON, Export JSON, Process
         btn_row = QHBoxLayout()
-
         btn_load = QPushButton("🗂 Đọc JSON")
         btn_load.clicked.connect(self.load_json)
-
         btn_export = QPushButton("💾 Xuất JSON")
         btn_export.clicked.connect(self.export_json)
-
         btn_process = QPushButton("🎧 Tạo file audio")
         btn_process.clicked.connect(self.process_audio)
-
         btn_row.addWidget(btn_load)
         btn_row.addWidget(btn_export)
         btn_row.addWidget(btn_process)
-
         layout.addLayout(btn_row)
 
         self.setLayout(layout)
@@ -67,6 +67,13 @@ class ToeicEditor(QWidget):
         self.table.insertRow(row)
         for col in range(4):
             self.table.setItem(row, col, QTableWidgetItem(""))
+
+    def delete_row(self):
+        selected = self.table.currentRow()
+        if selected >= 0:
+            self.table.removeRow(selected)
+        else:
+            QMessageBox.warning(self, "⚠️ Không có dòng nào được chọn", "Bạn hãy click chọn dòng trước khi xóa.")
 
     def select_mp3(self):
         file, _ = QFileDialog.getOpenFileName(self, "Chọn file MP3", "", "MP3 Files (*.mp3)")
