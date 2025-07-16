@@ -25,7 +25,7 @@ def text_to_audio(vi_line, en_line, index):
     return combined
 
 # Đọc file input.txt
-with open("input.txt", "r", encoding="utf-8") as f:
+with open("input-02.txt", "r", encoding="utf-8") as f:
     lines = [line.strip() for line in f if line.strip()]
 
 # Kiểm tra định dạng hợp lệ
@@ -36,8 +36,8 @@ if len(lines) % 2 != 0:
 final_audio = AudioSegment.empty()
 
 for i in range(0, len(lines), 2):
-    vi = lines[i]
-    en = lines[i + 1]
+    en = lines[i]
+    vi = lines[i + 1]
     print(f"🎤 Processing pair {i//2 + 1}: {vi} / {en}")
     pair_audio = text_to_audio(vi, en, i // 2)
     final_audio += pair_audio
