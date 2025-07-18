@@ -25,7 +25,7 @@ def text_to_audio(vi_line, en_line, index):
     return combined
 
 # Đọc file input.txt
-with open("input-02.txt", "r", encoding="utf-8") as f:
+with open("input-03.txt", "r", encoding="utf-8") as f:
     lines = [line.strip() for line in f if line.strip()]
 
 # Kiểm tra định dạng hợp lệ
@@ -43,5 +43,5 @@ for i in range(0, len(lines), 2):
     final_audio += pair_audio
 
 # Xuất file cuối
-final_audio.export("final_output.mp3", format="mp3")
-print("✅ Done! Saved as final_output.mp3")
+final_audio.export("final_output-03.wav", format="wav")
+print("✅ Done! Saved as final_output-03.wav")

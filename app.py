@@ -4,7 +4,7 @@ from gtts import gTTS
 from pydub import AudioSegment
 from PySide6.QtWidgets import (
     QApplication, QWidget, QVBoxLayout, QLabel, QLineEdit, QPushButton,
-    QFileDialog, QListWidgetItem, QHBoxLayout, QCheckBox, QMessageBox, QListWidget
+    QFileDialog, QListWidgetItem, QMessageBox, QListWidget
 )
 from PySide6.QtCore import Qt
 
@@ -160,7 +160,7 @@ class AudioApp(QWidget):
             if not mp3_path.exists():
                 QMessageBox.warning(self, "Missing MP3", f"{mp3_path} not found.")
                 continue
-
+            print(f"[✔] Exporting {name}...")
             try:
                 self.create_audio(mp3_path, fragments, vn_texts, Path(export_dir) / f"{name}-output.mp3")
             except Exception as e:
@@ -173,15 +173,15 @@ class AudioApp(QWidget):
         delay = AudioSegment.silent(duration=5000)
         audio = AudioSegment.from_mp3(mp3_path)
         output = AudioSegment.silent(duration=0)
-
-        for i, fragment in enumerate(fragments):
+        for i, vi_text in enumerate(vn_texts):
             if i == 0:
                 continue
-            start = float(fragment["begin"]) * 1000
-            end = float(fragment["end"]) * 1000
+            start = float(fragments[i+1]["begin"]) * 1000
+            end = float(fragments[i+1]["end"]) * 1000
             en_clip = audio[start:end]
 
             vi_text = vn_texts[i - 1] if i - 1 < len(vn_texts) else ""
+            print(f"{vi_text}")
             tts = gTTS(vi_text, lang="vi")
             tts_path = f"vi_temp_{i}.mp3"
             tts.save(tts_path)

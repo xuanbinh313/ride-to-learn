@@ -12,24 +12,25 @@ def is_question_number_or_title(line):
     return (
         re.match(r"^\*{0,2}\d+([–-]\d+)?(.*?)\*{0,2}$", stripped) or stripped.isdigit()
     )
+def is_title_line(line):
+    return re.match(r"^\d{2,3}([–-]\d{2,3})?(\.| refer)", line.strip()) is not None
 
-
-def split_raw_to_english_vietnamese(input_path="raw.txt", en_path="temp.txt"):
+def split_raw_to_english_vietnamese(input_path="raw.txt", en_path="temp.txt",final_line=None):
     with open(input_path, "r", encoding="utf-8") as f:
         lines = [line.strip() for line in f if line.strip()]
 
     en_lines = []
     vn_lines = []
-
     for line in lines:
-        if re.match(r"^\d{2,3}-\d{2,3}", line):
-            raw_title = line.replace("-", " to ")
+        if is_title_line(line):
+            raw_title = re.sub(r"[–—-]", " to ", line)
             en_lines.append(f"questions {raw_title}")
         elif is_vietnamese_line(line):
             vn_lines.append(line)
         else:
             en_lines.append(line)
-
+    if final_line:
+        en_lines.append(final_line)
     # Ghi tiếng Anh
     with open(en_path, "w", encoding="utf-8") as f:
         for line in en_lines:
@@ -59,15 +60,13 @@ def create_combined_audio(
     full_en_audio = AudioSegment.from_mp3(en_audio_path)
     if time_stop > 0:
         data["fragments"][len(data["fragments"]) - 1]["end"] = str(time_stop)
-        
-    for i, fragment in enumerate(data["fragments"]):
-        if i == 0:
-            continue  # Skip the first fragment if it's not needed
-        start = float(fragment["begin"]) * 1000
-        end = float(fragment["end"]) * 1000
+    fragments = data["fragments"]
+    for i, vi_text in enumerate(vn_lines):
+        start = float(fragments[i+1]["begin"]) * 1000
+        end = float(fragments[i+1]["end"]) * 1000
         print(f"Processing fragment: {start} to {end}")
+        print(f"Processing fragment: {vi_text}")
         en_clip = full_en_audio[start:end]
-        vi_text = vn_texts[i - 1]
         tts = gTTS(vi_text, lang="vi")
         tts_path = f"vi_temp_{i}.mp3"
         tts.save(tts_path)
@@ -85,7 +84,7 @@ import subprocess
 
 def run_aeneas(audio_path="audio.mp3", text_path="temp.txt", output_json="output.json"):
     cmd = [
-        "python",
+        "python3",
         "-m",
         "aeneas.tools.execute_task",
         audio_path,
@@ -94,13 +93,13 @@ def run_aeneas(audio_path="audio.mp3", text_path="temp.txt", output_json="output
         output_json,
     ]
     subprocess.run(cmd, check=True)
-    os.remove(text_path)  # Clean up the temporary text file
+    # os.remove(text_path)  # Clean up the temporary text file
     print("[✔] Aeneas alignment complete:", output_json)
 
 
 if __name__ == "__main__":
-    eng_lines, vn_lines = split_raw_to_english_vietnamese()
-
+    eng_lines, vn_lines = split_raw_to_english_vietnamese(final_line="number 89 what is the announcement is about?")
+    audio_path = "assets/economy/book-05/test03/89-91.mp3"
     # run aeneas to get alignment
-    run_aeneas(audio_path="89-91.mp3")
-    create_combined_audio(en_audio_path="89-91.mp3", vn_texts=vn_lines,time_stop=52)
+    run_aeneas(audio_path=audio_path)
+    create_combined_audio(en_audio_path=audio_path, vn_texts=vn_lines, time_stop=52)
