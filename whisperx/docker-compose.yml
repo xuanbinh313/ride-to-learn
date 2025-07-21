@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  whisper-webservice:
+    # The image you found on Docker Hub
+    image: onerahmet/openai-whisper-asr-webservice
+
+    # Environment variables to configure the service
+    environment:
+      # Sets the model to use (e.g., tiny, base, small, medium, large)
+      - ASR_MODEL=base
+      
+    # Expose the service's port (9000) to your host machine
+    ports:
+      - "9000:9000"
+      
+    # (Optional) For AMD GPU using ROCm
+    # Make sure you have ROCm drivers installed on your Linux host
+    # devices:
+    #   - "/dev/kfd:/dev/kfd"
+    #   - "/dev/dri:/dev/dri"
+      
+    # (Optional) For NVIDIA GPU
+    # Make sure you have the NVIDIA Container Toolkit installed
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: all
+    #           capabilities: [gpu]
