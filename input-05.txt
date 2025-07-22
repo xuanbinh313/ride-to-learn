@@ -1,0 +1,117 @@
+
+Bạn có muốn thay đổi công việc của mình không?
+Do you want to change/switch your job?
+
+Tôi không muốn thay đổi sự nghiệp phát triển frontend của mình.
+I am not looking to change my career from frontend development.
+
+Tuy nhiên, tôi hiện đang tìm kiếm một cơ hội việc làm mới để đối mặt với những thách thức lớn hơn và tiếp tục phát triển.
+However, I am currently seeking a new job opportunity to take on greater challenges and continue to grow.
+
+Bạn đã bao giờ làm việc bán thời gian chưa?
+Have you ever worked part-time?
+
+Trong suốt 5 năm sự nghiệp của mình, tôi đã tập trung vào các vai trò toàn thời gian để có thể cống hiến hết mình cho các dự án và đội nhóm.
+Throughout my 5-year career, I've focused on full-time roles to fully dedicate myself to the projects and teams.
+
+Bạn đã bao giờ làm công việc thời vụ chưa?
+Have you ever had a seasonal job?
+
+Chưa, tôi chưa từng làm công việc thời vụ. Sự nghiệp của tôi tập trung vào việc phát triển lâu dài trong ngành công nghệ.
+No, I haven't had a seasonal job. My career has been focused on long-term growth in the tech industry.
+
+Bạn có chấp nhận công việc tạm thời không?
+Would you accept temporary work?
+
+Mục tiêu chính của tôi là một vị trí lâu dài, nhưng tôi sẽ cân nhắc một hợp đồng tạm thời cho một dự án đặc biệt thú vị và phù hợp với kỹ năng của tôi.
+My main goal is a permanent position, but I would consider a temporary contract for a particularly exciting project that aligns with my skills.
+
+Công việc chính thức của bạn là gì?
+What is your permanent job?
+
+Hiện tại, công việc chính thức của tôi là Lập trình viên Frontend Cấp cao.
+Currently, my permanent job is Senior Frontend Developer.
+
+Bạn có nghỉ việc nếu sếp đối xử tệ với bạn không?
+Would you give up your job if your boss treats you like dirt?
+
+Môi trường làm việc tôn trọng là rất quan trọng. Nếu vấn đề không thể giải quyết qua đối thoại, tôi sẽ phải tìm một môi trường làm việc lành mạnh hơn.
+A respectful work environment is very important. If the issue couldn't be resolved through dialogue, I would have to seek a healthier work environment.
+
+Bạn đã bao giờ ngủ gật trong lúc làm việc chưa?
+Have you ever fallen asleep on the job?
+
+Chưa, tôi chưa bao giờ ngủ gật trong lúc làm việc.
+No, I have never fallen asleep on the job.
+
+Bạn có làm việc như một con chó không? (làm việc đầu tắt mặt tối)
+Do you work like a dog?
+
+Tôi là một người làm việc chăm chỉ và tận tụy, nhưng tôi tập trung vào việc làm việc thông minh, không phải chỉ làm việc nhiều giờ.
+I am a hardworking and dedicated person, but I focus on working smart, not just working long hours.
+
+Hiệu quả và chất lượng công việc là ưu tiên của tôi.
+Efficiency and quality of work are my priorities.
+
+Bạn có thể làm việc mà không nghỉ giải lao không?
+Can you work without a break?
+
+Tôi tin rằng việc nghỉ giải lao ngắn và đều đặn là cần thiết để duy trì sự tập trung và năng suất trong suốt cả ngày.
+I believe taking short, regular breaks is essential for maintaining focus and productivity throughout the day.
+
+Bạn thường chuẩn bị gì khi được gọi phỏng vấn?
+What do you often prepare when you are called for an interview?
+
+Tôi nghiên cứu kỹ về công ty: sản phẩm, công nghệ và văn hóa của họ.
+I research the company thoroughly: their products, tech stack, and culture.
+
+Tôi xem lại mô tả công việc, chuẩn bị nói về các dự án cũ và các câu hỏi để hỏi nhà tuyển dụng.
+I review the job description, prepare to talk about my past projects, and prepare questions to ask the interviewer.
+
+Bạn có muốn làm việc chăm chỉ và kiếm nhiều tiền nhưng phải trả giá bằng sức khỏe không?
+Do you want to work hard and earn a lot of money but it is at the expense of your health?
+
+Tôi tin vào sự cân bằng giữa công việc và cuộc sống. Sức khỏe tốt là nền tảng cho sự thành công lâu dài.
+I believe in work-life balance. Good health is the foundation for long-term success.
+
+Tôi sẽ không hy sinh sức khỏe của mình vì công việc.
+I would not sacrifice my health for a job.
+
+Bạn có muốn một sự nghiệp trong ngành giảng dạy không?
+Do you want a career in teaching?
+
+Mặc dù tôi thích việc hướng dẫn các đồng nghiệp, sự nghiệp chính của tôi vẫn tập trung vào việc trực tiếp phát triển sản phẩm phần mềm.
+While I enjoy mentoring colleagues, my primary career focus is on hands-on software development.
+
+Bạn nghĩ sao về việc làm việc không có đam mê?
+What do you think about working without passion?
+
+Tôi nghĩ làm việc mà không có đam mê thì không bền vững. Đam mê thúc đẩy sự sáng tạo và chất lượng.
+I think working without passion isn't sustainable. Passion drives creativity and quality.
+
+Nếu không có nó, công việc dễ trở thành gánh nặng và dẫn đến kiệt sức.
+Without it, a job can easily become a chore and lead to burnout.
+
+Theo bạn, những công việc nguy hiểm nhất trên thế giới là gì?
+What are the most dangerous jobs in the world in your opinion?
+
+Theo tôi, các công việc như đánh bắt cá biển sâu, khai thác gỗ, và xây dựng là một trong những công việc nguy hiểm nhất.
+In my opinion, jobs like deep-sea fishing, logging, and construction are among the most dangerous.
+
+Bạn có nghĩ rằng người tìm việc ở nông thôn không có nhiều cơ hội việc làm không?
+Do you think that job seekers don’t have many job opportunities in rural areas?
+
+Theo truyền thống thì đúng là như vậy, nhưng với sự phát triển của làm việc từ xa, đặc biệt là trong ngành công nghệ, vị trí địa lý đang dần trở nên ít quan trọng hơn.
+Traditionally that has been the case, but with the rise of remote work, especially in tech, location is becoming less of a barrier.
+
+Trường học có thể chuẩn bị cho học sinh đi làm như thế nào?
+How can schools prepare students for work?
+
+Trường học có thể chuẩn bị tốt hơn bằng cách tích hợp nhiều dự án thực tế, cung cấp các chương trình thực tập và dạy các kỹ năng mềm như làm việc nhóm.
+Schools can prepare students better by integrating practical projects, offering internships, and teaching soft skills like teamwork.
+
+Bạn có thể vừa học vừa làm không?
+Can you work and study at the same time?
+
+Chắc chắn rồi. Trong ngành công nghệ, việc học hỏi liên tục là một phần của công việc để luôn cập nhật kiến thức.
+Absolutely. In the tech industry, continuous learning is part of the job to stay current.

@@ -3,3 +3,4 @@ assets
 build
 dist
 *.spec
+whisperx/output

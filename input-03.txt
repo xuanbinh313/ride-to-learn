@@ -2,13 +2,9 @@ Have you ever worked part-time?
 Bạn đã từng làm việc bán thời gian chưa?
 Yes, I worked part-time during university to gain experience.
 Có, tôi đã làm bán thời gian khi còn học đại học để tích lũy kinh nghiệm.
-No, I haven’t had the chance to work part-time yet.
-Không, tôi chưa có cơ hội làm việc bán thời gian.
 
 Have you ever had a seasonal job?
 Bạn đã từng làm công việc thời vụ chưa?
-Yes, I worked a seasonal job during the summer holiday.
-Có, tôi từng làm công việc thời vụ vào kỳ nghỉ hè.
 No, I haven’t because I’ve always focused on long-term jobs.
 Không, tôi chưa làm vì tôi luôn tập trung vào công việc dài hạn.
 
@@ -16,8 +12,6 @@ What is your permanent job?
 Công việc chính thức của bạn là gì?
 My permanent job is frontend developer at a tech company.
 Công việc chính thức của tôi là lập trình viên frontend tại một công ty công nghệ.
-I don’t have a permanent job yet.
-Tôi chưa có công việc chính thức.
 
 Have you ever fallen asleep on the job?
 Bạn đã từng ngủ gật trong giờ làm việc chưa?
@@ -30,8 +24,6 @@ Do you work like a dog?
 Bạn có làm việc cực nhọc không?
 Yes, sometimes I work long hours under pressure.
 Có, đôi khi tôi làm việc nhiều giờ dưới áp lực.
-No, I try to work smart, not just hard.
-Không, tôi cố gắng làm việc thông minh chứ không chỉ chăm chỉ.
 
 What do you often prepare when you are called for an interview?
 Bạn thường chuẩn bị gì khi được gọi phỏng vấn?
