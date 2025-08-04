@@ -1,0 +1,623 @@
+id,start,end,text
+0,30.0,34.0,You will be asked to demonstrate how well you understand spoken English.
+1,34.0,38.0,The entire listening test will last approximately 45 minutes.
+2,38.0,42.0,"There are four parts, and directions are given for each part."
+3,42.0,45.0,You must mark your answers on the separate answer sheet.
+4,45.0,48.0,Do not write your answers in the test book.
+5,48.0,50.0,Part 1
+6,50.0,52.0,Directions
+7,52.0,57.0,"For each question in this part, you will hear four statements about a picture in your test book."
+8,57.0,63.0,"When you hear the statements, you must select the one statement that best describes what you see in the picture."
+9,63.0,67.0,Then find the number of the question on your answer sheet and mark your answer.
+10,67.0,72.0,"The statements will not be printed in your test book, and will be spoken only one time."
+11,72.0,75.0,Look at the example item below.
+12,75.0,78.0,Now listen to the four statements.
+13,78.0,79.0,A
+14,79.0,81.0,He is looking at a monitor.
+15,81.0,83.0,B
+16,83.0,85.0,He is sitting at a desk.
+17,85.0,86.0,C
+18,86.0,89.0,He is writing on a blackboard.
+19,89.0,90.0,D
+20,90.0,93.0,He is repairing a computer.
+21,93.0,95.0,Statement B
+22,95.0,97.0,He is sitting at a desk.
+23,97.0,103.0,"Is the best description of the picture, so you should select answer B and mark it on your answer sheet."
+24,103.0,105.0,Now part 1 will begin.
+25,105.0,107.0,Number 1
+26,107.0,111.0,Look at the picture marked number 1 in your test book.
+27,111.0,112.0,A
+28,112.0,115.0,He is typing on a keyboard.
+29,115.0,116.0,B
+30,116.0,119.0,He is staring at the monitor.
+31,119.0,120.0,C
+32,120.0,123.0,He is turning on the computer.
+33,123.0,124.0,D
+34,124.0,131.0,He is plugging in a laptop.
+35,131.0,133.0,Number 2
+36,133.0,137.0,Look at the picture marked number 2 in your test book.
+37,137.0,138.0,A
+38,138.0,141.0,A woman is filling the bowl with water.
+39,141.0,142.0,B
+40,142.0,146.0,A woman is pouring something into the pan.
+41,146.0,147.0,C
+42,147.0,151.0,A woman is stirring vegetables while cooking.
+43,151.0,152.0,D
+44,152.0,160.0,A woman is watering some potted plants.
+45,160.0,170.0,Go on to the next page.
+46,170.0,171.0,Number 3
+47,171.0,175.0,Look at the picture marked number 3 in your test book.
+48,175.0,176.0,A
+49,176.0,180.0,A man is pointing into the distance.
+50,180.0,181.0,B
+51,181.0,184.0,They are wearing hats.
+52,184.0,185.0,C
+53,185.0,188.0,They are having a meeting in an office.
+54,188.0,189.0,D
+55,189.0,197.0,A man is standing beside the woman.
+56,197.0,199.0,Number 4
+57,199.0,202.0,Look at the picture marked number 4 in your test book.
+58,202.0,203.0,A
+59,203.0,206.0,A woman is leaning against the door.
+60,206.0,208.0,B
+61,208.0,211.0,Some railing is being set up.
+62,211.0,212.0,C
+63,212.0,215.0,There is some shrubbery near the balcony.
+64,215.0,216.0,D
+65,216.0,224.0,The blinds are being drawn over the windows.
+66,224.0,226.0,Number 5
+67,226.0,229.0,Look at the picture marked number 5 in your test book.
+68,229.0,231.0,A
+69,231.0,233.0,A boat is on the water.
+70,233.0,235.0,B
+71,235.0,238.0,The houses overlook the water.
+72,238.0,239.0,C
+73,239.0,242.0,The water is flowing over the rocks.
+74,242.0,243.0,D
+75,243.0,250.0,Some boats are being rode.
+76,250.0,252.0,Number 6
+77,252.0,255.0,Look at the picture marked number 6 in your test book.
+78,255.0,256.0,A
+79,256.0,260.0,The statue is mounted on a pedestal.
+80,260.0,261.0,B
+81,261.0,264.0,Some people are riding horses.
+82,264.0,265.0,C
+83,265.0,268.0,The bricks are being laid.
+84,268.0,269.0,D
+85,269.0,277.0,The lamppost is being taken down.
+86,277.0,280.0,Go on to the next page.
+87,286.0,288.0,Number 7
+88,288.0,292.0,Look at the picture marked number 7 in your test book.
+89,292.0,293.0,A
+90,293.0,296.0,He is riding the waves.
+91,296.0,297.0,B
+92,297.0,299.0,He is opening a book.
+93,299.0,301.0,C
+94,301.0,303.0,He is riding with a pen.
+95,303.0,304.0,D
+96,304.0,311.0,He is holding a bottle.
+97,311.0,312.0,Number 8
+98,312.0,316.0,Look at the picture marked number 8 in your test book.
+99,316.0,317.0,A
+100,317.0,321.0,Some people are exchanging business cards.
+101,321.0,322.0,B
+102,322.0,325.0,A woman is taking notes.
+103,325.0,326.0,C
+104,326.0,330.0,Some people are reviewing papers.
+105,330.0,331.0,D
+106,331.0,339.0,The men are standing across from each other.
+107,339.0,340.0,Number 9
+108,340.0,344.0,Look at the picture marked number 9 in your test book.
+109,344.0,345.0,A
+110,345.0,348.0,One man is riding on the board.
+111,348.0,350.0,B
+112,350.0,352.0,People are listening to a speaker.
+113,352.0,354.0,C
+114,354.0,357.0,Some people are using their laptops.
+115,357.0,359.0,D
+116,359.0,366.0,All of the people are seated.
+117,366.0,367.0,Number 10
+118,367.0,371.0,Look at the picture marked number 10 in your test book.
+119,371.0,372.0,A
+120,372.0,375.0,Some chairs are piled on the table.
+121,375.0,377.0,B
+122,377.0,379.0,The centerpiece is floral.
+123,379.0,381.0,C
+124,381.0,384.0,Chairs have been arranged under the lights.
+125,384.0,385.0,D
+126,385.0,393.0,There's a round table between the chairs.
+127,393.0,403.0,Go on to the next page.
+128,403.0,405.0,Part 2
+129,405.0,406.0,Directions
+130,406.0,411.0,You will hear a question or statement and three responses spoken in English.
+131,411.0,415.0,They will be spoken only one time and will not be printed in your test book.
+132,415.0,422.0,"Select the best response to the question or statement and mark the letter A, B, or C on your answer sheet."
+133,422.0,429.0,"For example, you will hear when did you speak with the vice president?"
+134,429.0,432.0,You will also hear A
+135,432.0,435.0,For a couple of hours.
+136,435.0,436.0,B
+137,436.0,438.0,Last night.
+138,438.0,440.0,C
+139,440.0,443.0,"Yes, his speech was very informative."
+140,443.0,448.0,The best response to the question when did you speak with the vice president?
+141,448.0,449.0,Is choice B
+142,449.0,450.0,Last night.
+143,450.0,452.0,So B is the correct answer.
+144,452.0,456.0,You should mark answer B on your answer sheet.
+145,456.0,459.0,Now let us begin with question number 11.
+146,459.0,461.0,Number 11.
+147,461.0,464.0,Where did you leave your research report?
+148,464.0,465.0,A
+149,465.0,468.0,I gave it to Mr. Hansen.
+150,468.0,469.0,B
+151,469.0,471.0,In the newspaper.
+152,471.0,473.0,C
+153,473.0,477.0,"Yes, I searched the internet last night."
+154,481.0,482.0,Number 12.
+155,482.0,485.0,What's your president's name?
+156,485.0,486.0,A.
+157,486.0,489.0,May I ask why you're asking?
+158,489.0,490.0,B.
+159,490.0,493.0,"Sorry, I wasn't present at the meeting."
+160,493.0,495.0,C.
+161,495.0,498.0,You can call me John.
+162,501.0,503.0,Number 13.
+163,503.0,506.0,Could you type this document for me?
+164,506.0,507.0,A.
+165,507.0,509.0,"Yes, you can."
+166,510.0,511.0,B.
+167,511.0,513.0,I'd be happy to.
+168,513.0,515.0,C.
+169,515.0,522.0,"Sure, I love these types of books."
+170,522.0,524.0,Number 14.
+171,524.0,528.0,Has your store been in operation for more than 30 years?
+172,528.0,530.0,A.
+173,530.0,533.0,"No, he just started his business last year."
+174,533.0,535.0,B.
+175,535.0,537.0,"Yes, I have some."
+176,537.0,539.0,C.
+177,539.0,545.0,"Actually, 29."
+178,545.0,547.0,Number 15.
+179,547.0,551.0,Why don't we order more office chairs?
+180,551.0,552.0,A.
+181,552.0,554.0,Buy tomorrow.
+182,554.0,555.0,B.
+183,555.0,558.0,"Okay, let me call the supplier."
+184,558.0,560.0,C.
+185,560.0,567.0,Because they look out of fashion.
+186,567.0,569.0,Number 16.
+187,569.0,572.0,Can I use your cell phone for a minute?
+188,572.0,573.0,A.
+189,573.0,576.0,"Sorry, it's already sold out."
+190,576.0,577.0,B.
+191,577.0,579.0,B my guest.
+192,579.0,581.0,C.
+193,581.0,587.0,Who is going to take the minutes?
+194,587.0,589.0,Number 17.
+195,589.0,593.0,Shouldn't we review the projection report this afternoon?
+196,593.0,595.0,A.
+197,595.0,598.0,"Sorry, the projector is currently not working."
+198,598.0,600.0,B.
+199,600.0,603.0,"Yes, your report was impressive."
+200,603.0,605.0,C.
+201,605.0,612.0,Why don't we do it first thing tomorrow morning?
+202,612.0,614.0,Number 18.
+203,614.0,617.0,Could you tell me where the mail room is?
+204,617.0,619.0,A.
+205,619.0,622.0,"Sure, I sent it to you by email."
+206,622.0,623.0,B.
+207,623.0,625.0,It'll start any minute.
+208,625.0,626.0,C.
+209,626.0,633.0,"Come with me, please."
+210,633.0,635.0,Number 19.
+211,635.0,638.0,I thought you had already left for Paris.
+212,638.0,639.0,A.
+213,639.0,641.0,My flight was cancelled.
+214,641.0,643.0,B.
+215,643.0,646.0,"Yes, I left it on my desk."
+216,646.0,647.0,C.
+217,647.0,652.0,"Right, it was such a beautiful city."
+218,654.0,656.0,Number 20.
+219,656.0,660.0,"Do you want to go now, or will you be here for a while?"
+220,660.0,661.0,A.
+221,661.0,664.0,I'm about to leave now.
+222,664.0,665.0,B.
+223,665.0,668.0,I stay up late now and then.
+224,668.0,670.0,C.
+225,670.0,676.0,I don't know why.
+226,676.0,678.0,Number 21.
+227,678.0,683.0,Wasn't Ms. Gardner supposed to stop by our office today?
+228,683.0,684.0,A.
+229,684.0,686.0,It stopped working.
+230,686.0,688.0,B.
+231,688.0,690.0,I heard she was ill.
+232,690.0,691.0,C.
+233,691.0,699.0,"Yes, I will be at the office this afternoon."
+234,699.0,701.0,Number 22.
+235,701.0,704.0,"The sales director was just here, wasn't she?"
+236,704.0,706.0,A.
+237,706.0,709.0,I haven't seen her all day.
+238,709.0,710.0,B.
+239,710.0,713.0,"Yes, it's still on sale."
+240,713.0,714.0,C.
+241,714.0,721.0,Can you give me some directions?
+242,721.0,723.0,Number 23.
+243,723.0,726.0,I must have misplaced the telephone directory.
+244,726.0,728.0,A.
+245,728.0,731.0,"No, the line was busy."
+246,731.0,732.0,B.
+247,732.0,735.0,"Well, I don't want to miss the staff meeting either."
+248,735.0,737.0,C.
+249,737.0,744.0,Why don't you check the filing cabinet?
+250,744.0,746.0,Number 24.
+251,746.0,749.0,Which hotel is Mr. Lee staying at?
+252,749.0,750.0,A.
+253,750.0,752.0,Please stay tuned.
+254,752.0,754.0,B.
+255,754.0,756.0,The one beside the beach.
+256,756.0,758.0,C.
+257,758.0,764.0,It was very cozy.
+258,764.0,766.0,Number 25.
+259,766.0,770.0,How about we buy every employee a laptop computer?
+260,770.0,772.0,A.
+261,772.0,774.0,Whichever is faster.
+262,774.0,776.0,B.
+263,776.0,778.0,I'd the end of the week.
+264,778.0,780.0,C.
+265,780.0,786.0,It'd be too costly.
+266,786.0,788.0,Number 26.
+267,788.0,792.0,I heard Mr. Park retired recently.
+268,792.0,793.0,A.
+269,793.0,796.0,"Yes, I feel a little tired."
+270,796.0,798.0,B.
+271,798.0,801.0,He wasn't late for the retirement party.
+272,801.0,802.0,C.
+273,802.0,809.0,"Yes, last Monday."
+274,809.0,811.0,Number 27.
+275,811.0,814.0,"How would you like your steak, sir?"
+276,814.0,815.0,A.
+277,815.0,817.0,"Well done, please."
+278,817.0,818.0,B.
+279,818.0,821.0,It comes with a garden salad.
+280,821.0,823.0,C.
+281,823.0,824.0,Thanks.
+282,824.0,829.0,It was really delicious.
+283,829.0,831.0,Number 28.
+284,831.0,835.0,I'm afraid this vending machine doesn't appear to work.
+285,835.0,837.0,A.
+286,837.0,839.0,"Sorry, I have no coins."
+287,839.0,841.0,B.
+288,841.0,844.0,That's the third time this week.
+289,844.0,846.0,C.
+290,846.0,850.0,It seems like he disappeared suddenly.
+291,852.0,854.0,Number 29.
+292,854.0,858.0,Should I finish the quarterly report today or tomorrow?
+293,858.0,860.0,A.
+294,860.0,863.0,Please get it done as soon as you can.
+295,863.0,864.0,B.
+296,864.0,867.0,It's already a quarter past ten.
+297,867.0,869.0,C.
+298,869.0,876.0,You'd better report it to him tomorrow.
+299,876.0,878.0,Number 30.
+300,878.0,880.0,"This is your car, isn't it?"
+301,880.0,881.0,A.
+302,881.0,884.0,I used to take the bus.
+303,884.0,885.0,B.
+304,885.0,888.0,"Yes, I purchased it last week."
+305,888.0,889.0,C.
+306,889.0,896.0,I was stuck in traffic.
+307,896.0,898.0,Number 31.
+308,898.0,901.0,I was told that our flight has been postponed.
+309,901.0,903.0,A.
+310,903.0,905.0,For how long?
+311,905.0,906.0,B.
+312,906.0,908.0,She told me about it.
+313,908.0,909.0,C.
+314,909.0,916.0,I'll send the original to you by post.
+315,916.0,918.0,Number 32.
+316,918.0,921.0,I can't read those small letters.
+317,921.0,923.0,A.
+318,923.0,924.0,No problem.
+319,924.0,926.0,There's a ladder for you.
+320,926.0,927.0,B.
+321,927.0,931.0,How about putting on my reading glasses?
+322,931.0,932.0,C.
+323,932.0,938.0,"Don't worry, Mr. Peterson will lead the training session."
+324,938.0,943.0,Number 33.
+325,943.0,946.0,Why haven't you turned in the expense report yet?
+326,946.0,948.0,A.
+327,948.0,951.0,Because it seems a little expensive.
+328,951.0,952.0,B.
+329,952.0,955.0,Turn right at the next corner.
+330,955.0,957.0,C.
+331,957.0,964.0,I misplaced some receipts.
+332,964.0,966.0,Number 34.
+333,966.0,969.0,When do you expect Mr. Johnson to come back?
+334,969.0,971.0,A.
+335,971.0,973.0,Every day except Tuesday.
+336,973.0,975.0,B.
+337,975.0,978.0,I'll be back later this afternoon.
+338,978.0,979.0,C.
+339,979.0,985.0,He didn't tell me.
+340,985.0,987.0,Number 35.
+341,987.0,990.0,What seems to be the problem?
+342,990.0,991.0,A.
+343,991.0,994.0,I don't have a clue.
+344,994.0,995.0,B.
+345,995.0,997.0,He seems alright.
+346,997.0,999.0,C.
+347,999.0,1002.0,"Yes, that's the problem."
+348,1002.0,1007.0,Number 36.
+349,1007.0,1012.0,We need 30 copies of this handout by 2pm.
+350,1012.0,1013.0,A.
+351,1013.0,1016.0,Let's make more just in case.
+352,1016.0,1018.0,B.
+353,1018.0,1021.0,Please hand it in as soon as possible.
+354,1021.0,1023.0,C.
+355,1023.0,1030.0,"Yes, it was really neat."
+356,1030.0,1031.0,Number 37.
+357,1031.0,1034.0,Have you already taken the course?
+358,1034.0,1035.0,A.
+359,1035.0,1039.0,I haven't taken my medication yet.
+360,1039.0,1040.0,B.
+361,1040.0,1043.0,"Yes, and it was very informative."
+362,1043.0,1045.0,C.
+363,1045.0,1052.0,The report isn't ready yet.
+364,1052.0,1053.0,Number 38.
+365,1053.0,1057.0,Do you know why the bank is closed today?
+366,1057.0,1058.0,A.
+367,1058.0,1060.0,It's a holiday.
+368,1060.0,1062.0,B.
+369,1062.0,1064.0,I'd like to open an account.
+370,1064.0,1066.0,C.
+371,1066.0,1073.0,"Yes, it's close to my office."
+372,1073.0,1074.0,Number 39.
+373,1074.0,1077.0,Did you have a pleasant flight?
+374,1077.0,1078.0,A.
+375,1078.0,1081.0,The plane takes off in a few minutes.
+376,1081.0,1082.0,B.
+377,1082.0,1085.0,I couldn't sleep on it at all.
+378,1085.0,1086.0,C.
+379,1086.0,1093.0,"Yes, I'm pleased to hear that."
+380,1093.0,1095.0,Number 40.
+381,1095.0,1099.0,Should we look at the manual before we assemble these shelves?
+382,1099.0,1101.0,A.
+383,1101.0,1102.0,Why not?
+384,1102.0,1104.0,I have it right here.
+385,1104.0,1105.0,B.
+386,1105.0,1108.0,In the assembly line.
+387,1108.0,1109.0,C.
+388,1109.0,1116.0,Look at the man standing by the bookshelf.
+389,1116.0,1119.0,Part 3.
+390,1119.0,1120.0,Directions.
+391,1120.0,1123.0,You will hear some conversations between two people.
+392,1123.0,1129.0,You will be asked to answer three questions about what the speakers say in each conversation.
+393,1129.0,1136.0,"Select the best response to each question and mark the letter A, B, C or D on your answer sheet."
+394,1137.0,1143.0,The conversations will be spoken only one time and will not be printed in your test book.
+395,1143.0,1148.0,Questions 41 through 43 refer to the following conversation.
+396,1148.0,1151.0,"Excuse me, I'm looking for the global theatre."
+397,1151.0,1153.0,Do you know where it is by any chance?
+398,1153.0,1156.0,"Yes, but it's not within walking distance."
+399,1156.0,1160.0,I suggest you take the number six bus across the street.
+400,1160.0,1162.0,"Oh, I see the bus stop over there."
+401,1162.0,1168.0,"Actually, I need to arrive there by 5pm to see the world premiere of Sean Cobb's new play."
+402,1168.0,1170.0,I don't want to miss any of it.
+403,1170.0,1172.0,It's already 4.20pm.
+404,1172.0,1175.0,I think you'd really better hurry them.
+405,1175.0,1176.0,Number 41.
+406,1176.0,1181.0,Where does the conversation probably take place?
+407,1187.0,1189.0,Number 42.
+408,1189.0,1192.0,What does the woman want to see?
+409,1198.0,1200.0,Number 43.
+410,1200.0,1203.0,What does the man suggest?
+411,1210.0,1215.0,Questions 44 through 46 refer to the following conversation.
+412,1215.0,1218.0,Good evening. Welcome to Shanghai Kitchen. How may I help you?
+413,1218.0,1224.0,"Hi, do you have a table for a party of six available? It seems like your restaurant is quite busy."
+414,1224.0,1232.0,"Wait a minute, man. We're fully booked right now, but we could seat you in about 15 minutes in the main hall if you don't mind waiting."
+415,1232.0,1237.0,"Or if you prefer a private room, there will be one available in about half an hour."
+416,1237.0,1243.0,"The private room sounds better for me, but I need to talk with the other people in my group first. I'll be right back."
+417,1243.0,1246.0,Number 44.
+418,1246.0,1249.0,What does the woman want to do?
+419,1256.0,1258.0,Number 45.
+420,1258.0,1261.0,"According to the man, what is the problem?"
+421,1268.0,1270.0,Number 46.
+422,1270.0,1273.0,What does the man suggest the woman do?
+423,1276.0,1279.0,Number 47.
+424,1279.0,1282.0,Go on to the next page.
+425,1290.0,1294.0,Questions 47 through 49 refer to the following conversation.
+426,1294.0,1301.0,"Hello, Brian. Do you have a minute to help me? I want to access our company website, but I can't."
+427,1301.0,1305.0,"I called the technical support team, but nobody answered the phone."
+428,1305.0,1312.0,Didn't you know that our website is being updated to fully reflect the changes that came into effect on November 3rd?
+429,1312.0,1317.0,You mean our new payroll system? Do you know when the update will be finished?
+430,1317.0,1323.0,I need to look over our new product lines on our website so that I can give the latest information to my clients.
+431,1323.0,1330.0,"Actually, I have a catalog showing the full range of our new winter clothes. Would you like to look at it?"
+432,1330.0,1332.0,Number 47.
+433,1332.0,1335.0,What did the woman try to do?
+434,1342.0,1344.0,Number 48.
+435,1344.0,1347.0,What became effective as of November 3rd?
+436,1354.0,1356.0,Number 49.
+437,1356.0,1359.0,What does the man offer to do?
+438,1362.0,1365.0,Number 49.
+439,1365.0,1370.0,Questions 50 through 52 refer to the following conversation.
+440,1370.0,1375.0,"Hey, Sam. Have you tried the new seafood restaurant on Glory Avenue?"
+441,1375.0,1382.0,"Yes. I went there with a colleague a couple of weeks ago. The food was great, but the prices were much higher than I'd expected."
+442,1382.0,1385.0,"Oh, really? How about the atmosphere?"
+443,1385.0,1391.0,I read an article the other day and it said that a warm and friendly ambiance matches the food they serve.
+444,1391.0,1396.0,That's right. It has a pretty nice atmosphere and the servers are very kind.
+445,1396.0,1402.0,"Actually, I have a dinner appointment with Mark in marketing this evening. Would you like to join us?"
+446,1402.0,1407.0,Number 50. What did the man do two weeks ago?
+447,1414.0,1420.0,Number 51. How did the woman probably learn about the restaurant?
+448,1421.0,1433.0,Number 52. What does the man say about the restaurant?
+449,1438.0,1443.0,Questions 53 through 55 refer to the following conversation.
+450,1443.0,1449.0,Pardon me. Can you tell me where Miz Kim's office is? I'm already late for the meeting in our office.
+451,1450.0,1457.0,"Sure. It's on the fifth floor. You can take the elevator at the end of this corridor. You must be her new secretary, right?"
+452,1457.0,1466.0,"I think you've got the wrong person. In fact, I run a jewelry shop on King Street and I commission Miz Kim to design our new company logo."
+453,1466.0,1473.0,"Oh, I'm sorry that I took you for somebody else. My name is David Grant and I work with Miz Kim in her design team."
+454,1473.0,1477.0,"If you come with me, I'll show you where it is."
+455,1477.0,1482.0,Number 53. Where are most likely the speakers?
+456,1488.0,1495.0,"Number 54. According to the conversation, who is the woman?"
+457,1495.0,1502.0,Number 55. What does the man offer to do?
+458,1512.0,1517.0,Questions 56 through 58 refer to the following conversation.
+459,1517.0,1525.0,Hello. May I speak with Robert Tucker? I'm supposed to get a priceless estimate for the interior design of my office from him.
+460,1525.0,1532.0,"I'm sorry, but he is talking with our lawyer in the conference room right now. Would you like to call him back in about an hour?"
+461,1532.0,1540.0,"Well, I need to show an apartment to a client in 20 minutes. Could you please ask him to give me a call before the end of the day?"
+462,1540.0,1544.0,No problem. I'll have him call you as soon as he comes back.
+463,1545.0,1551.0,Number 56. What is the purpose of the man's call?
+464,1557.0,1562.0,Number 57. Why is Robert Tucker unavailable?
+465,1563.0,1569.0,Number 58. When did the woman ask the man to call back?
+466,1581.0,1586.0,Questions 59 through 61 refer to the following conversation.
+467,1587.0,1594.0,"Jim in personnel told me that Mr. Park in your department will retire next month. Is that correct? You know, he's only in his late 40s."
+468,1594.0,1603.0,That's right. Apparently he wants to spend more time with his wife and children. I heard he's planning to leave the city and run an orchard in his hometown.
+469,1603.0,1608.0,We're going to miss him. He's one of the best architects that I have worked with.
+470,1608.0,1613.0,I definitely agree with you. I hope he'll continue to work as a freelance architect.
+471,1614.0,1620.0,"By the way, is anyone preparing a farewell party for him? If so, I really want to attend it."
+472,1620.0,1625.0,Number 59. How did the man find out about Mr. Park's retirement?
+473,1633.0,1637.0,Number 60. Why is Mr. Park leaving the company?
+474,1644.0,1650.0,Number 61. What does the woman want Mr. Park to do?
+475,1657.0,1661.0,Questions 62 through 64 refer to the following conversation.
+476,1662.0,1671.0,"Sally, my laptop crashed three times this week, and I think I need to purchase a new one as soon as possible. Could you recommend any store around here?"
+477,1671.0,1679.5,Why don't you try Best Bies on Hamilton Street? I bought my printer there and I was satisfied with their technical service and affordable prices.
+478,1680.0,1687.0,I know where it is. I went there with my former colleague Ben Brown last year. It seems to be the largest store in this region.
+479,1687.0,1696.0,You can say that again. I heard they are scheduled to start their annual clearance sale today. Why don't we stop by there during our lunch break?
+480,1696.0,1700.0,I want to buy the new laptop computer they are advertising in the papers.
+481,1701.0,1705.0,Number 62. What does the man have a problem with?
+482,1713.0,1717.0,Number 63. Why does the woman suggest Best Bies?
+483,1717.0,1729.0,Number 64. What will the speakers probably do at lunchtime?
+484,1737.0,1742.0,Questions 65 through 67 refer to the following conversation.
+485,1743.0,1747.0,"Wow, these roses are beautiful. Did you grow them yourself?"
+486,1747.0,1756.0,"Yes, I have been growing flowers as a hobby since 2005. At first I liked the scent of the flowers that my husband gave me as a birth they gift."
+487,1756.0,1762.0,And later decided to plant some lilies and roses in my garden. That's how everything started.
+488,1762.0,1771.0,"You have such a great pastime. I used to collect rare stamps and coins, but I have been so tied up with work these days that I can't continue doing it."
+489,1772.0,1781.0,"I know how busy you are nowadays. Oh, by the way, you just started working at British Bank, right? How's your new job?"
+490,1781.0,1786.0,Number 65. What are the speakers mainly talking about?
+491,1793.0,1798.0,Number 66. Where does the man probably work?
+492,1802.0,1809.0,Number 67. What does the woman ask the man about?
+493,1816.0,1821.0,Questions 68 through 70 refer to the following conversation.
+494,1821.0,1829.0,"Julie, I just got a phone call from Ms. Woods in accounting. She asked me if your expense report is ready."
+495,1829.0,1835.0,"Actually, I was going to submit it this morning, but I realized that some hotel receipts were missing."
+496,1835.0,1841.0,"I asked the hotel to fax me the copies, and they promised to send them to me by the end of the day."
+497,1841.0,1849.0,Good. I'll tell Ms. Woods that you will turn in the report by tomorrow. That should give her enough time to proceed with the reimbursement.
+498,1849.0,1853.0,"Okay, I'll try to get it done first thing tomorrow morning then."
+499,1853.0,1858.0,Number 68. Why hasn't the woman completed the report?
+500,1859.0,1873.0,"Number 69. According to the woman, what was she going to do this morning?"
+501,1873.0,1882.0,Number 70. What will the man probably do later?
+502,1882.0,1889.0,Go on to the next page.
+503,1889.0,1896.0,Part 4. Directions. You will hear some short talks given by a single speaker.
+504,1896.0,1903.0,You will be asked to answer three questions about what the speaker says in each short talk.
+505,1903.0,1910.0,"Select the best response to each question and mark the letter A, B, C, or D on your answer sheet."
+506,1910.0,1915.0,The talks will be spoken only one time and will not be printed in your test book.
+507,1915.0,1920.0,Questions 71 through 73 refer to the following telephone message.
+508,1920.0,1924.0,"Hi, James. This is Sharon."
+509,1925.0,1931.0,"This morning, Mr. Garcia called and asked if you could delay your demonstration of the new accounting software."
+510,1931.0,1937.0,It was originally supposed to take place tomorrow afternoon at 2 p.m. in Mr. Garcia's department.
+511,1937.0,1942.0,"However, he said that the inspectors from the health office are supposed to visit his office tomorrow,"
+512,1942.0,1946.0,and he has to prepare for it all of a sudden.
+513,1946.0,1953.0,"For that reason, he was wondering whether you could stop by his office next Monday instead."
+514,1953.0,1960.0,His contact number is 5-0-0-9-8-0-0. Please call him as soon as you get this message.
+515,1960.0,1966.0,"If nobody answers the phone, you can leave a message with a secretary Karen Suzuki."
+516,1966.0,1970.0,Number 71. When did you get the message?
+517,1970.0,1974.0,Leave a message with a secretary Karen Suzuki.
+518,1974.0,1977.0,Number 71. When did Mr. Garcia make a call?
+519,1977.0,1988.0,Number 72. Why did Mr. Garcia call?
+520,1988.0,1993.0,Number 73. What does that mean?
+521,1993.0,2000.0,Number 73. What does the speaker require James to do?
+522,2000.0,2007.0,Questions 74-76. Refer to the following announcement.
+523,2007.0,2014.0,"Before we break for lunch, I want to remind you that we'll be sponsoring our annual benefit run for a local charity."
+524,2015.0,2021.0,"This year, all proceeds will be used to buy winter clothes for orphans in our region."
+525,2021.0,2025.0,I'd like to invite you to share this valuable experience with us.
+526,2025.0,2032.0,Anyone who wishes to participate in this great cause can sign up for it at the information desk by tomorrow.
+527,2032.0,2036.0,A cold bottle of water will be offered to every participant on the spot.
+528,2036.0,2042.0,"For more details, please feel free to visit our website at www.vincere.com"
+529,2042.0,2050.0,"For more details, please feel free to pick up a pamphlet in the lobby or call Ms. Choi at 340-8700."
+530,2050.0,2052.0,Thank you.
+531,2052.0,2057.0,"Number 74. According to the speaker, who is this year's event 4?"
+532,2065.0,2069.0,Number 75. Why would one call Ms. Choi?
+533,2072.0,2079.0,Number 76. What is available in the lobby?
+534,2079.0,2092.0,Questions 77-79. Refer to the following excerpt from a talk.
+535,2092.0,2100.0,"Good afternoon, everyone. First of all, I'd like to thank you for purchasing our new Xerox 100 copy machine."
+536,2100.0,2105.0,My name is Ben Watson and I'm here to tell you how to make the most of it.
+537,2105.0,2110.0,This state-of-the-art copy machine is designed to handle all your office requirements.
+538,2110.0,2116.0,"Due to our advanced technology, it also has the ability to fax, scan, and print."
+539,2116.0,2121.0,It's easy to use interface and commands will help you expedite work in your office.
+540,2121.0,2129.0,We'll go through each function step-by-step and you'll also see all the necessary information in the manuals that I'm about to pass around.
+541,2130.0,2136.0,Number 77. What is the purpose of the talk?
+542,2141.0,2150.0,Number 78. What is said about Xerox 100?
+543,2151.0,2157.0,Number 79. What will the speaker do next?
+544,2164.0,2169.0,Questions 80-82. Refer to the following traffic report.
+545,2169.0,2174.0,"Good evening, motorists. This is Susan Lee with your hourly traffic report."
+546,2175.0,2184.0,"Although traffic is moving smoothly along major highways, the downtown area is already backed up several miles due to vehicles heading out of the city."
+547,2184.0,2187.0,Please be prepared for congestion if you're about to leave work.
+548,2187.0,2195.0,"As a reminder, the soccer match between England and Spain is scheduled to kick off at 8pm at Big Ben Stadium on Queen's Road."
+549,2195.0,2199.0,You may want to avoid this area and take Route 10 instead.
+550,2199.0,2204.0,That's it for now. NBN Sports News with Daniel Walker will follow in a minute.
+551,2205.0,2209.0,Number 80. How often is the traffic report broadcasted?
+552,2217.0,2220.0,Number 81. Who is the intended audience?
+553,2221.0,2226.0,Number 82. What will take place at 8pm?
+554,2227.0,2231.0,Questions 83-85.
+555,2240.0,2244.0,"Hello, Miss Otis. This is Jason Brown from Speedy Office Depot."
+556,2244.0,2250.0,You ordered 20 boxes of evergreen copy-paper and 10 packs of Peace Ballpoint pens.
+557,2250.0,2258.0,You ordered 20 boxes of evergreen copy-paper and 10 packs of Peace Ballpoint pens via our online ordering system.
+558,2258.0,2265.0,"However, we are currently out of evergreen copy-paper and we won't be restocked until the end of the week."
+559,2265.0,2270.0,"As soon as we have it, we'll deliver it to your warehouse at no extra charge."
+560,2270.0,2277.0,"To make up for this inconvenience, I'll mail you a coupon for $30 towards your next order."
+561,2277.0,2284.0,"Should you have any concerns with your order, please call David Jones at 340-7600."
+562,2284.0,2286.0,Thank you.
+563,2286.0,2291.0,Number 83. What kind of business does the speaker most likely work for?
+564,2299.0,2303.0,Number 84. What problem does the speaker mention?
+565,2308.0,2314.0,Number 85. What does the speaker say he will send?
+566,2322.0,2327.0,Questions 86-88 refer to the following excerpt from a meeting.
+567,2327.0,2333.0,Before wrapping up the meeting I'd like to give you an update on the parking situation at our main office.
+568,2334.0,2343.0,"As some of you already know, the underground parking lot in our main building will be closed from March 15 to March 21 for renovations."
+569,2343.0,2354.0,"As a number of employees have complained about the inconveniences the old facilities cause, to solve this problem, JT Innovations has been hired to renovate it."
+570,2354.0,2361.0,"During the renovations, employees are invited to use the parking lot adjacent to our East Wing instead."
+571,2361.0,2365.0,"Also, you can park your car at FreshMarts parking lot if you want."
+572,2365.0,2373.0,It's located just 50 meters away from our main building and you can use it for free if you present your ID badge to the attendant.
+573,2373.0,2376.0,Thank you for your cooperation.
+574,2376.0,2381.0,Number 86. What is the main topic of the talk?
+575,2382.0,2388.0,Number 87. What is JT Innovations responsible for?
+576,2388.0,2393.0,Number 88. What are the listeners recommended to do?
+577,2412.0,2416.0,Go on to the next page.
+578,2422.0,2427.0,Questions 89-91 refer to the following voicemail message.
+579,2427.0,2432.0,"Hello Mr. Duke, this is Sean Lee from the Manchester Book Club."
+580,2432.0,2438.0,I'm calling to ask whether you can participate in the Manchester Reading Festival next month.
+581,2438.0,2446.0,"We'd like you to read some passages from your latest bestseller, The Revenge, and share opinions with our audience on the main stage."
+582,2446.0,2452.0,I think it would be a great opportunity for the public to explore the world of your writing.
+583,2452.0,2461.0,"The event will be held in the Global Cultural Centre from May 3rd to May 9th, and I hope you'll be able to join us on the first day of the festival."
+584,2461.0,2472.0,"To find out more about the event, please visit www.manchesterreading.com or call me at 450 9900 anytime you want."
+585,2472.0,2476.0,I'm looking forward to hearing from you soon.
+586,2476.0,2481.0,Number 89. What is the purpose of the call?
+587,2481.0,2493.0,Number 90. How long will the event last?
+588,2499.0,2505.0,Number 91. What does the speaker want Mr. Duke to do?
+589,2511.0,2515.0,Questions 92 through 94 refer to the following announcement.
+590,2515.0,2521.0,"Hello everyone, my name is John Anderson and I'm the store manager here."
+591,2521.0,2534.0,"First, I'd like to express my gratitude for your patronage. To celebrate our 30th anniversary, we are offering 50% off our products, including microwave ovens, air conditioners, and refrigerators for one week."
+592,2534.0,2539.0,"This is our first 50% off sale, which means it will be the biggest sale ever."
+593,2539.0,2545.0,This will be a great chance for you to buy our high-end home appliances at reasonable prices.
+594,2545.0,2553.0,"In addition, if your purchase is over $500, you will be given a vacuum for free. Come and take advantage of this special offer."
+595,2553.0,2557.0,Don't miss this once in a lifetime opportunity next week.
+596,2557.0,2562.0,Number 92. Where is the announcement being made?
+597,2564.0,2574.0,Number 93. How long has the business been operating?
+598,2574.0,2587.0,Number 94. What will be offered for a purchase of $600?
+599,2587.0,2593.0,Number 95. How long has the business been operating?
+600,2593.0,2599.0,Questions 95 through 97 refer to the following recorded message.
+601,2599.0,2608.0,"Hello, you've reached Underwood Community Library. We're currently closed. We're open from 9 to 8 every day except from Monday."
+602,2608.0,2612.0,"For general questions, please call us back during our regular hours."
+603,2612.0,2621.0,"If you wish to reserve a book, you can visit our online reservation service at www.underwoodbooks.com."
+604,2621.0,2626.0,"Through the website, you can also refer to the listings of available books."
+605,2626.0,2633.0,"Finally, please know that the children's reading room that can accommodate as many as 60 children will soon be open."
+606,2633.0,2641.0,The official opening ceremony is scheduled to take place on April 10th and everyone is welcome to attend.
+607,2641.0,2653.0,Number 95. What is stated about the library?
+608,2653.0,2664.0,Number 96. What will happen on April 10th?
+609,2665.0,2677.0,Number 97. What are listeners encouraged to do?
+610,2677.0,2681.0,Questions 98 through 100 refer to the following talk.
+611,2681.0,2689.0,Thank you for joining the Fifth Healthcare Job Fair. My name is Jim Todd and I'm the coordinator of this year's event.
+612,2689.0,2694.0,"As you know, healthcare professionals are tremendously respected in our society."
+613,2694.0,2702.0,Anyone who wants to be a healthcare practitioner will find today's lineup of presentations quite interesting and informative.
+614,2702.0,2709.0,"First, the keynote speech delivered by Dr. Sean Jefferson is scheduled to start at 10 a.m."
+615,2709.0,2716.0,"After that, a short coffee break will be given and you can also enjoy free snacks and beverages in the lobby."
+616,2716.0,2725.0,"At 11.30, Professor Jerry Hudson from London University will give you some valuable tips on how to plan a career in your chosen field."
+617,2725.0,2734.0,"If you want to know more about the schedule, please feel free to pick up a copy of the program at the information desk on the second floor."
+618,2734.0,2739.0,Number 98. For whom is the talk intended?
+619,2746.0,2757.0,Number 99. What will be given in the lobby?
+620,2757.0,2769.0,Number 100. What does the speakers say about Jerry Hudson?
+621,2769.0,2773.0,This is the end of the listening test.

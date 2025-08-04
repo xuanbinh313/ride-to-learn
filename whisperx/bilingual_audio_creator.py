@@ -1,3 +1,4 @@
+import csv
 import json
 import re
 from pathlib import Path
@@ -18,10 +19,14 @@ class BilingualAudioCreator:
     def load_segments(self):
         """Load segments from output.json"""
         try:
-            with open(self.output_json, 'r', encoding='utf-8') as f:
-                data = json.load(f)
-                self.segments = data.get('segments', [])
-                print(f"📊 Loaded {len(self.segments)} segments from {self.output_json}")
+            # with open(self.output_json, 'r', encoding='utf-8') as f:
+            #     data = json.load(f)
+            #     self.segments = data.get('segments', [])
+            #     print(f"📊 Loaded {len(self.segments)} segments from {self.output_json}")
+            with open(self.output_json,'r', encoding='utf-8') as csvFile:
+                reader = csv.DictReader(csvFile)
+                for row in reader:
+                    self.segments.append(row)
         except Exception as e:
             print(f"❌ Error loading segments: {e}")
             return False
@@ -187,7 +192,7 @@ class BilingualAudioCreator:
                 merged_audio += audio_segment
             
             # Export merged file
-            merged_output_path = output_path / "merged_all_pairs.mp3"
+            merged_output_path = output_path / "62-64.mp3"
             merged_audio.export(merged_output_path, format="mp3")
             
             total_duration = len(merged_audio) / 1000
