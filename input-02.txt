@@ -1,71 +1,41 @@
-Do you like working from home?
-Bạn có thích làm việc tại nhà không?
-Yes, I like working from home because it gives me more flexibility and saves commuting time.
-Vâng, tôi thích làm việc tại nhà vì nó giúp tôi linh hoạt hơn và tiết kiệm thời gian đi lại.
-I don't like working from home; I prefer meeting and talking with people. 
-tôi không thích làm việc ở nhà, tôi thích gặp và trò chuyện với mọi người. 
-I enjoy joining meetings to exchange ideas and get to know new colleagues.
-tham gia các cuộc họp để trao đổi làm làm quen thêm đồng nghiệp mới.
+1. Biến là gì trong JavaScript?
+What is a variable in JavaScript?
+Biến là nơi lưu trữ dữ liệu tạm thời trong bộ nhớ.
+A variable is a container for storing data temporarily in memory.
+2. let, const, và var khác nhau thế nào?
+What is the difference between let, const, and var?
+let và const có phạm vi trong block, còn var có phạm vi trong function.
+let and const are block-scoped, while var is function-scoped.
+3. Hàm là gì trong JavaScript?
+What is a function in JavaScript?
+Hàm là một khối mã có thể tái sử dụng để thực hiện một nhiệm vụ cụ thể.
+A function is a reusable block of code that performs a specific task.
+4. JavaScript là ngôn ngữ đồng bộ hay bất đồng bộ?
+Is JavaScript synchronous or asynchronous?
+JavaScript là ngôn ngữ đơn luồng nhưng hỗ trợ bất đồng bộ qua callback, promise và async/await.
+JavaScript is single-threaded but supports asynchronous operations via callbacks, promises, and async/await.
+5. Sự khác nhau giữa loose equality và strict equality là gì?
+What is the difference between loose equality and strict equality?
+loose equality so sánh giá trị, còn strict equality so sánh cả giá trị và kiểu dữ liệu.
+loose equality compares values, while strict equality compares both values and types.
+Sự khác nhau giữa defer và async trong thẻ script là gì?
+What is the difference between defer and async in the script tag?
+Cả hai thuộc tính giúp tải script không chặn HTML, nhưng hoạt động khác nhau.
+Both attributes make the script non-blocking, but they work differently.
+Thuộc tính defer hoạt động như thế nào?
+How does the defer attribute work?
+defer tải script song song với HTML nhưng chỉ thực thi sau khi HTML được phân tích xong.
+defer downloads the script in parallel with HTML but executes it only after the HTML is fully parsed.
+Thuộc tính async hoạt động như thế nào?
+How does the async attribute work?
+async cũng tải song song, nhưng script được thực thi ngay khi tải xong, có thể làm gián đoạn HTML.
+async also downloads in parallel, but executes as soon as it's loaded, possibly interrupting HTML parsing.
+Nên đặt thẻ script ở đâu?
+Where should the script tag be placed?
+Nếu không dùng defer hay async, nên đặt cuối body để không chặn giao diện.
+If you don't use defer or async, place it at the end of the body to avoid blocking the UI.
 
-Do you want to change your career?
-Bạn có muốn thay đổi nghề nghiệp của mình không?
-Yes, I want to change my career to something more challenging and global like remote frontend development.
-Có, tôi muốn thay đổi sang công việc thử thách và mang tính toàn cầu hơn như lập trình frontend từ xa.
-No, I don’t want to change my career because I enjoy what I’m doing now.
-Không, tôi không muốn đổi nghề vì tôi đang rất hài lòng với công việc hiện tại.
-
-Do you think English is useful for your future?
-Bạn có nghĩ tiếng Anh hữu ích cho tương lai của bạn không?
-Yes, English is very important because it opens the door to international job opportunities.
-Vâng, tiếng Anh rất quan trọng vì nó mở ra cơ hội việc làm quốc tế.
-No, I don’t think English is necessary for everyone depending on their career.
-Không, tôi không nghĩ tiếng Anh cần thiết với tất cả mọi người, tùy theo nghề nghiệp của họ.
-
-Do you like office work or manual work?
-Bạn thích công việc văn phòng hay công việc tay chân?
-I prefer office work because it suits my skills in coding, design, and teamwork.
-Tôi thích công việc văn phòng vì nó phù hợp với kỹ năng lập trình, thiết kế và làm việc nhóm của tôi.
-I don't like office work because sitting too long makes me tired and less active.
-Tôi không thích công việc văn phòng vì ngồi quá lâu khiến tôi mệt mỏi và ít vận động.
-
-Do you want to start your own business someday?
-Bạn có muốn khởi nghiệp một ngày nào đó không?
-Yes, I hope to start a tech-related business when I have enough experience and capital.
-Có, tôi hy vọng sẽ khởi nghiệp trong lĩnh vực công nghệ khi tôi có đủ kinh nghiệm và vốn.
-No, I prefer working for a company because I don’t like taking big financial risks.
-Không, tôi thích làm thuê cho công ty vì tôi không thích mạo hiểm về tài chính.
-
-Do you think it's more important to love your job or to earn a good salary?
-Bạn nghĩ việc yêu thích công việc quan trọng hơn hay kiếm được mức lương cao quan trọng hơn?
-Yes, I think loving your job is more important because it keeps you motivated in the long run.
-Vâng, tôi nghĩ yêu công việc quan trọng hơn vì nó giúp bạn có động lực lâu dài.
-No, I think earning a good salary is more important because it ensures financial security.
-Không, tôi nghĩ kiếm được mức lương cao quan trọng hơn vì nó đảm bảo sự ổn định tài chính.
-
-Do you think young people should have detailed career plans?
-Bạn có nghĩ rằng người trẻ nên có kế hoạch nghề nghiệp chi tiết không?
-Yes, having a career plan helps young people stay focused and make better decisions.
-Vâng, việc có kế hoạch nghề nghiệp giúp người trẻ tập trung và đưa ra quyết định tốt hơn.
-No, I don’t think it’s necessary to have a strict plan because things can change quickly.
-Không, tôi không nghĩ cần phải có kế hoạch cứng nhắc vì mọi thứ có thể thay đổi nhanh chóng.
-
-Would you accept temporary work?
-Bạn có chấp nhận công việc tạm thời không?
-Yes, I would accept temporary work if it gives me experience and builds my portfolio.
-Có, tôi sẽ chấp nhận công việc tạm thời nếu nó giúp tôi có thêm kinh nghiệm và xây dựng hồ sơ năng lực.
-No, I prefer stable, long-term jobs because I like job security.
-Không, tôi thích công việc ổn định, dài hạn vì tôi cần sự an toàn nghề nghiệp.
-
-Do you like freelance work or a nine-to-five job?
-Bạn thích công việc tự do hay công việc hành chính (9 giờ đến 5 giờ)?
-I like freelance work because it gives me more freedom with time and location.
-Tôi thích công việc tự do vì nó cho tôi sự linh hoạt về thời gian và địa điểm.
-I don’t like freelance work because it’s unstable and stressful sometimes.
-Tôi không thích công việc tự do vì đôi khi nó không ổn định và gây áp lực.
-
-Would you give up your job if your boss treats you badly?
-Bạn có từ bỏ công việc nếu sếp đối xử tệ với bạn không?
-Yes, I would quit if I were treated unfairly or disrespected at work.
-Có, tôi sẽ nghỉ việc nếu bị đối xử bất công hoặc thiếu tôn trọng tại nơi làm việc.
-No, I would try to talk to my boss and solve the problem before quitting.
-Không, tôi sẽ cố gắng nói chuyện với sếp và giải quyết vấn đề trước khi nghỉ việc.
+Closure là gì trong JavaScript?
+What is a closure in JavaScript?
+Closure là một hàm có thể ghi nhớ và truy cập các biến ở phạm vi bên ngoài của nó, kể cả sau khi hàm ngoài đã kết thúc.
+A closure is a function that remembers and can access variables from its outer scope even after the outer function has finished executing.

@@ -8,9 +8,9 @@ import tempfile
 import os
 
 class BilingualAudioCreator:
-    def __init__(self, learning_file, output_json, audio_file, output_folder="bilingual_output"):
+    def __init__(self, learning_file, output_csv, audio_file, output_folder="bilingual_output"):
         self.learning_file = learning_file
-        self.output_json = output_json
+        self.output_csv = output_csv
         self.audio_file = audio_file
         self.output_folder = output_folder
         self.segments = []
@@ -23,9 +23,10 @@ class BilingualAudioCreator:
             #     data = json.load(f)
             #     self.segments = data.get('segments', [])
             #     print(f"📊 Loaded {len(self.segments)} segments from {self.output_json}")
-            with open(self.output_json,'r', encoding='utf-8') as csvFile:
+            with open(self.output_csv,'r', encoding='utf-8') as csvFile:
                 reader = csv.DictReader(csvFile)
                 for row in reader:
+                    print(row)
                     self.segments.append(row)
         except Exception as e:
             print(f"❌ Error loading segments: {e}")
@@ -88,7 +89,6 @@ class BilingualAudioCreator:
         
         best_match = None
         best_score = 0
-        
         for segment in self.segments:
             segment_text = re.sub(r'[^\w\s]', '', segment['text'].lower())
             
@@ -150,8 +150,8 @@ class BilingualAudioCreator:
             
             # Extract English audio segment
             main_audio = AudioSegment.from_mp3(self.audio_file)
-            start_ms = int(english_segment['start'] * 1000)
-            end_ms = int(english_segment['end'] * 1000)
+            start_ms = float(english_segment['start'] ) *1000
+            end_ms = float(english_segment['end'] )* 1000
             english_audio = main_audio[start_ms:end_ms]
             
             # Combine: Vietnamese TTS + 5s delay + English audio + 5s delay
@@ -192,14 +192,14 @@ class BilingualAudioCreator:
                 merged_audio += audio_segment
             
             # Export merged file
-            merged_output_path = output_path / "62-64.mp3"
+            merged_output_path = output_path / "74-76.mp3"
             merged_audio.export(merged_output_path, format="mp3")
             
             total_duration = len(merged_audio) / 1000
             print(f"✅ Successfully merged all files into: {merged_output_path}")
             print(f"📊 Total duration: {total_duration:.2f} seconds ({total_duration/60:.2f} minutes)")
             
-            # Remove individual MP3 files
+            # Remove individual MP3 files~~
             print(f"🗑️  Cleaning up individual files...")
             for mp3_file in mp3_files:
                 try:
@@ -250,8 +250,8 @@ class BilingualAudioCreator:
             if segment is None:
                 print(f"   ❌ No matching audio found for: {english_text[:30]}...")
                 continue
-            
-            print(f"   ✅ Found audio segment: {segment['start']:.2f}s - {segment['end']:.2f}s")
+            print(segment['start'], segment['end'])
+            # print(f"✅ Found audio segment: {segment['start']:.2f}s - {segment['end']:.2f}s")
             
             # Create output filename
             safe_name = re.sub(r'[^\w\s-]', '', english_text[:30])
@@ -273,12 +273,12 @@ class BilingualAudioCreator:
 def main():
     # Configuration
     learning_file = "learning.txt"
-    output_json = "output.json"
-    audio_file = "../assets/Actual Test 04.mp3"
+    output_csv = "output.csv"
+    audio_file = "../assets/Actual_Test_04.mp3"
     output_folder = "output"
     
     # Create processor
-    processor = BilingualAudioCreator(learning_file, output_json, audio_file, output_folder)
+    processor = BilingualAudioCreator(learning_file, output_csv, audio_file, output_folder)
     
     # Process all pairs
     processor.process_all_pairs()
