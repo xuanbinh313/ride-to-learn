@@ -7,8 +7,8 @@ import os
 from pydub import AudioSegment
 import re
 # The path to the audio file you want to transcribe
-audio_file_path = "../assets/Actual Test 04.mp3"  # 👈 Change this to your file's path
-output_file_path = "output.json"  # 👈 Change this to your desired output file path
+audio_file_path = "../assets/Actual_Test_04.mp3"  # 👈 Change this to your file's path
+output_file_path = "output.csv"  # 👈 Change this to your desired output file path
 output_folder = "output"
 output_doc = "output_doc.txt"  # Folder to save individual question audio files
 class Toeic:
@@ -77,6 +77,9 @@ class Toeic:
                         self.segments[i]['end'] = self.segments[i + 1]['end']
                         question_segments.append(self.segments[i])
                         i += 2
+                    elif current_text.startswith("Go on to the next page"):
+                        i += 1
+                        continue
                     else:
                         question_segments.append(self.segments[i])
                         i += 1
@@ -109,8 +112,12 @@ class Toeic:
                     if "Part 3" in current_text or "Part 4" in current_text or \
                        current_text.startswith(next_pattern):
                         break
-                    question_segments.append(self.segments[i])
-                    i += 1
+                    if current_text.startswith("Go on to the next page"):
+                        i += 1
+                        continue
+                    else:
+                        question_segments.append(self.segments[i])
+                        i += 1
                 break
             next += 1
         if not question_segments:
@@ -209,14 +216,27 @@ class Toeic:
         """Main processing function"""
         try:
             # Read JSON file and load segments
-            with open(self.output_file_path, "r") as json_file:
-                response_data = json.load(json_file)
-                self.segments = response_data.get('segments', [])
-                
+            # with open(self.output_file_path, "r") as json_file:
+            #     response_data = json.load(json_file)
+            #     self.segments = response_data.get('segments', [])
+            # Read CSV file and load segments
+            with open(self.output_file_path, "r", encoding="utf-8") as csv_file:
+                lines = csv_file.readlines()
+                self.segments = []
+                for line in lines[1:]:  # Skip header
+                    parts = line.strip().split(',')
+                    if len(parts) >= 3:
+                        segment = {
+                            'id': parts[0],
+                            'start': float(parts[1]),
+                            'end': float(parts[2]),
+                            'text': parts[3] if len(parts) > 3 else ''
+                        }
+                        self.segments.append(segment)
             print(f"📊 Loaded {len(self.segments)} segments from {self.output_file_path}")
             
             if not self.segments:
-                print("❌ No segments found in the JSON file")
+                print("❌ No segments found in the CSV file")
                 return
             
             print("\nChoose processing mode:")

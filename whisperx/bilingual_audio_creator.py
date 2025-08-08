@@ -192,7 +192,7 @@ class BilingualAudioCreator:
                 merged_audio += audio_segment
             
             # Export merged file
-            merged_output_path = output_path / "74-76.mp3"
+            merged_output_path = output_path / "77-79.mp3"
             merged_audio.export(merged_output_path, format="mp3")
             
             total_duration = len(merged_audio) / 1000
@@ -250,8 +250,7 @@ class BilingualAudioCreator:
             if segment is None:
                 print(f"   ❌ No matching audio found for: {english_text[:30]}...")
                 continue
-            print(segment['start'], segment['end'])
-            # print(f"✅ Found audio segment: {segment['start']:.2f}s - {segment['end']:.2f}s")
+            print(f"✅ Found audio segment: {segment['start']:.2f}s - {segment['end']:.2f}s")
             
             # Create output filename
             safe_name = re.sub(r'[^\w\s-]', '', english_text[:30])
