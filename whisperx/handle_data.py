@@ -4,11 +4,12 @@ import requests
 import json
 import re
 import os
+import csv
 from pydub import AudioSegment
 import re
 # The path to the audio file you want to transcribe
-audio_file_path = "../assets/Actual_Test_04.mp3"  # 👈 Change this to your file's path
-output_file_path = "output.csv"  # 👈 Change this to your desired output file path
+audio_file_path = "../assets/Actual Test 05.mp3"  # 👈 Change this to your file's path
+output_file_path = "Actual Test 05.csv"  # 👈 Change this to your desired output file path
 output_folder = "output"
 output_doc = "output_doc.txt"  # Folder to save individual question audio files
 class Toeic:
@@ -148,7 +149,7 @@ class Toeic:
                 end_time = segments[-1]['end']
                 
                 # Create output filename
-                output_path = Path(output_folder) / f"{question_num:02d}.mp3"
+                output_path = Path(output_folder) / f"Test05-{question_num:02d}.mp3"
                 
                 # Create audio with delay
                 self.create_audio_with_delay(start_time, end_time, output_path)
@@ -178,7 +179,7 @@ class Toeic:
                 end_time = segments[-1]['end']
                 end_question = question_num + 2
                 # Create output filename
-                output_path = Path(output_folder) / f"{question_num:02d}-{end_question:02d}.mp3"
+                output_path = Path(output_folder) / f"Test05-{question_num:02d}-{end_question:02d}.mp3"
                 # Create audio with delay
                 self.create_audio_with_delay(start_time, end_time, output_path)
                 print(f"   Questions {question_num}-{end_question}: {start_time:.2f}s - {end_time:.2f}s")
@@ -221,16 +222,16 @@ class Toeic:
             #     self.segments = response_data.get('segments', [])
             # Read CSV file and load segments
             with open(self.output_file_path, "r", encoding="utf-8") as csv_file:
-                lines = csv_file.readlines()
+                csv_reader = csv.reader(csv_file)
+                next(csv_reader)  # Skip header
                 self.segments = []
-                for line in lines[1:]:  # Skip header
-                    parts = line.strip().split(',')
-                    if len(parts) >= 3:
+                for row in csv_reader:
+                    if len(row) >= 4:
                         segment = {
-                            'id': parts[0],
-                            'start': float(parts[1]),
-                            'end': float(parts[2]),
-                            'text': parts[3] if len(parts) > 3 else ''
+                            'id': row[0],
+                            'start': float(row[1]),
+                            'end': float(row[2]),
+                            'text': row[3]
                         }
                         self.segments.append(segment)
             print(f"📊 Loaded {len(self.segments)} segments from {self.output_file_path}")

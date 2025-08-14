@@ -6,7 +6,7 @@ from pydub import AudioSegment
 
 # Config
 whisper_url = "http://localhost:9000/asr"
-audio_file_path = "../assets/output.wav"  # file gốc
+audio_file_path = "../assets/Actual Test 05.mp3"  # file gốc
 chunk_length_ms = 10 * 60 * 1000  # 10 phút
 params = {
     "encode": "true",
@@ -62,7 +62,7 @@ for i in range(0, duration_ms, chunk_length_ms):
     offset_seconds += len(chunk) / 1000.0
 
 # Lưu file CSV
-csv_file_path = "output_merged.csv"
+csv_file_path = "raw.csv"
 with open(csv_file_path, "w", newline="", encoding="utf-8") as csvfile:
     writer = csv.writer(csvfile)
     writer.writerow(["id", "start", "end", "text"])
