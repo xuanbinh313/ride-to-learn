@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  aeneas:
+    build: .
+    image: aeneas:latest
+    # optionally mount a host folder for input/output:
+    volumes:
+      - .:/data:rw
+    working_dir: /data
+    entrypoint: ["/usr/local/bin/entrypoint.sh"]
+    command: ["--help"]
