@@ -1,6 +1,6 @@
 import yt_dlp
 
-url = "https://www.youtube.com/watch?v=AiAYhUAkHpg"
+url = input("Enter YouTube URL: ")
 
 ydl_opts = {
     "format": "m4a/bestaudio/best",  # try m4a first, fallback to bestaudio
