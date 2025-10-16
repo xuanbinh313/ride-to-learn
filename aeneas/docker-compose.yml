@@ -8,4 +8,5 @@ services:
       - .:/data:rw
     working_dir: /data
     entrypoint: ["/usr/local/bin/entrypoint.sh"]
-    command: ["--help"]
+    tty: true
+    stdin_open: true
