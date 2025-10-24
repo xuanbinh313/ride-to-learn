@@ -460,7 +460,7 @@ class BilingualAudioCreator:
 
 def main():
     # Configuration
-    learning_file = "learning.txt"
+    learning_file = "../shared-volume/learning.txt"
     output_csv = "../shared-volume/raw.csv"
     input_audio_file = input("Enter the path to the main audio file (default: ../shared-volume/audio.mp3): ").strip()
     audio_file = f"../shared-volume/{input_audio_file}" if input_audio_file else "../shared-volume/audio.mp3"

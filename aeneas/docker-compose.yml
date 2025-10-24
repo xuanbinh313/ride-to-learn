@@ -6,7 +6,7 @@ services:
     # optionally mount a host folder for input/output:
     volumes:
       - .:/data:rw
-      - ../shared-volume:/data/assets:rw
+      - ../shared-volume:/data/assets
     working_dir: /data
     entrypoint: ["python3", "script.py"]
     tty: true
