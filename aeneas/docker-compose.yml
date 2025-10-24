@@ -6,7 +6,8 @@ services:
     # optionally mount a host folder for input/output:
     volumes:
       - .:/data:rw
+      - ../shared-volume:/data/assets:rw
     working_dir: /data
-    entrypoint: ["/usr/local/bin/entrypoint.sh"]
+    entrypoint: ["python3", "script.py"]
     tty: true
     stdin_open: true

@@ -6,7 +6,8 @@ from pydub import AudioSegment
 
 # Config
 whisper_url = "http://localhost:9000/asr"
-audio_file_path = "../assets/Actual Test 05.mp3"  # file gốc
+audio_input = input("Enter the path to the audio file: ")
+audio_file_path = f"../shared-volume/{audio_input if audio_input else 'audio.mp3'}"  # file gốc
 chunk_length_ms = 10 * 60 * 1000  # 10 phút
 params = {
     "encode": "true",

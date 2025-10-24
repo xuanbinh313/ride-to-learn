@@ -1,0 +1,22 @@
+NextJS 14 introduced an experimental feature called partial pre-rendering.
+Next.js 14 đã giới thiệu một tính năng thử nghiệm có tên là partial pre-rendering.
+Typically, when a server receives a request, it renders the page and sends the result back to the client.
+Thông thường, khi một máy chủ nhận được một yêu cầu, nó sẽ kết xuất trang đó và gửi kết quả về cho phía client trình duyệt.
+We call this end of the spectrum dynamic rendering,
+Chúng ta gọi đây là dynamic rendering kết xuất động
+Pages that personalize content based on runtime information 
+Những trang mà nội dung được cá nhân hóa dựa trên thông tin thời gian thực 
+or frequently updated data require this per request rendering because each render produces a different result.
+hoặc dữ liệu thường xuyên được cập nhật thì cần kiểu kết xuất mỗi lần yêu cầu này, vì mỗi lần kết xuất sẽ cho ra kết quả khác nhau.
+For example, an e-commerce site might show recommendations for some lies to each user.
+Ví dụ, một trang thương mại điện tử có thể hiển thị các gợi ý được cá nhân hóa cho từng người dùng.
+However, most applications have some pages that don't benefit from dynamic rendering
+Tuy nhiên, hầu hết các ứng dụng có một số trang không cần kết xuất động 
+because they don't depend on any runtime information that would change the result of the render.
+Vì chúng không phụ thuộc vào bất kỳ thông tin thời gian thực nào có thể làm thay đổi kết quả kết xuất.
+For example, a company's blog might produce the same result every time it's rendered.
+Chúng ta có thể tối ưu nhóm trang này bằng cách kết xuất trước prerender chúng.
+We can optimize this subset of pages by doing the rendering work ahead of time.
+Chúng ta có thể tối ưu nhóm trang này bằng cách kết xuất trước prerender chúng.
+We call this end of the spectrum pre-rendering or static rendering.
+Chúng ta gọi đầu còn lại của phổ này là prerendering hoặc static rendering kết xuất tĩnh.

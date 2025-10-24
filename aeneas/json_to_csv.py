@@ -30,4 +30,4 @@ def convert_json_to_csv(json_file, csv_file):
 
 if __name__ == "__main__":
     # Convert raw.json to CSV
-    convert_json_to_csv('raw.json', 'raw.csv')
+    convert_json_to_csv('raw.json', '../shared-volume/raw.csv')

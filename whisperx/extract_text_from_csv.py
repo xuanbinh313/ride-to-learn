@@ -49,7 +49,7 @@ def extract_text_from_csv(csv_file, output_file):
 def main():
     """Main function to extract text from raw.csv to raw.txt"""
     csv_file = "raw.csv"
-    output_file = "raw.txt"
+    output_file = "../shared-volume/raw.txt"
     
     print("🔄 CSV Text Extractor")
     print("=" * 30)

@@ -4,3 +4,4 @@ build
 dist
 *.spec
 whisperx/output
+shared-volume
