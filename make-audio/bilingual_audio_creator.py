@@ -196,104 +196,138 @@ class BilingualAudioCreator:
         
         # Create output directory
         os.makedirs(self.output_folder, exist_ok=True)
-        
         # Create audio segments for each pair
+        # pair_audios: for individual pair files -> Vietnamese 1 time + English repeated 5 times
+        # single_pair_audios: for group/combined files -> Vietnamese 1 time + English 1 time
         pair_audios = []
+        single_pair_audios = []
         success_count = 0
-        
+
         for i, pair in enumerate(pairs):
             vietnamese_text = pair.get('vietnamese', '')
             english_text = pair.get('english', '')
-            
+
             if not vietnamese_text or not english_text:
                 print(f"⚠️ Skipping incomplete pair {i+1}")
                 continue
-            
+
             print(f"   Processing pair {i+1}: {vietnamese_text[:50]}... / {english_text[:50]}...")
-            
+
             # Find matching audio segment for English
             segment = self.find_audio_segment(english_text)
-            
+
             if segment is None:
                 print(f"   ⚠️ No matching audio found, using TTS for English: {english_text[:30]}...")
-                # Create bilingual audio using TTS for both languages
-                audio = self.create_tts_bilingual_audio(vietnamese_text, english_text)
+                # For individual pair files: Vietnamese 1 time + English repeated 5 times
+                audio = self.create_tts_bilingual_audio(vietnamese_text, english_text, repeat_times=5)
+                # For group/combined files: Vietnamese 1 time + English 1 time
+                single_audio = self.create_tts_bilingual_audio(vietnamese_text, english_text, repeat_times=1)
             else:
                 print(f"   ✅ Found audio segment: {float(segment['start']):.2f}s - {float(segment['end']):.2f}s")
-                # Create bilingual audio using original English audio
-                audio = self.create_hybrid_bilingual_audio(vietnamese_text, segment)
-            
+                # For individual pair files: Vietnamese 1 time + English repeated 5 times
+                audio = self.create_hybrid_bilingual_audio(vietnamese_text, segment, repeat_times=5)
+                # For group/combined files: Vietnamese 1 time + English 1 time
+                single_audio = self.create_hybrid_bilingual_audio(vietnamese_text, segment, repeat_times=1)
+
             if audio:
                 pair_audios.append(audio)
                 success_count += 1
-        
+
+            # Append single-play version only if created successfully; otherwise try to create a fallback
+            if single_audio:
+                single_pair_audios.append(single_audio)
+            else:
+                # If single_audio failed but the repeated audio exists, try to derive a single-play version
+                # (fallback: take the repeated audio and remove repeated English by keeping only the first Vietnamese+English block)
+                try:
+                    if audio:
+                        seg = audio
+                        # Compute approximate chunk length by dividing total by (1 + 5) if repeat_times used 5
+                        approx_chunk_ms = int(len(seg) / (1 + 5))
+                        fallback_single = seg[: (approx_chunk_ms * 1)]
+                        single_pair_audios.append(fallback_single)
+                except Exception:
+                    pass
+
         if not pair_audios:
             print("❌ No audio segments created")
             return False
-        
+
         # Generate progressive combinations with enhanced numbering
         total_files = 0
         file_number = 1
         group_number = 1
-        
+
         # Work in groups of 10 pairs
         remaining_audios = pair_audios.copy()
-        
+        remaining_single_audios = single_pair_audios.copy()
+
         while remaining_audios:
             print(f"\n🔄 Processing Group {group_number}...")
-            
+
             # Take up to 10 pairs for this group
             current_group = remaining_audios[:10]
+            current_single_group = remaining_single_audios[:10]
             remaining_audios = remaining_audios[10:]
-            
+            remaining_single_audios = remaining_single_audios[10:]
+
             # Create progressive files for this group
             for i in range(len(current_group)):
-                # Individual pair (odd numbers: 01, 03, 05, 07, 09, 11, 13, 15, 17, 19)
+                # Individual pair (odd numbers: 01, 03, 05, ...)
                 filename = f"{file_number:02d}.mp3"
                 filepath = Path(self.output_folder) / filename
                 current_group[i].export(filepath, format="mp3")
                 total_files += 1
                 print(f"   ✅ Created: {filename} (Pair {i+1} of Group {group_number})")
                 file_number += 1
-                
-                # Progressive combination (even numbers: 02, 04, 06, 08, 10, 12, 14, 16, 18, 20)
+
+                # Progressive combination (even numbers: 02, 04, 06, ...)
+                # Use single-play audios for group combinations (Vietnamese 1 time + English 1 time)
                 if i > 0:  # Skip the first one as it's just a single pair
                     combined_audio = AudioSegment.empty()
                     for j in range(i + 1):
-                        combined_audio += current_group[j]
-                    
+                        # If single version exists, use it; otherwise fall back to the repeated version
+                        if j < len(current_single_group) and current_single_group[j] is not None:
+                            combined_audio += current_single_group[j]
+                        else:
+                            combined_audio += current_group[j]
+
                     combo_filename = f"{file_number:02d}.mp3"
                     combo_filepath = Path(self.output_folder) / combo_filename
                     combined_audio.export(combo_filepath, format="mp3")
                     total_files += 1
                     print(f"   ✅ Created: {combo_filename} (Combo of Pairs 1-{i+1} of Group {group_number})")
                     file_number += 1
-            
+
             group_number += 1
-        
+
         # Create final merged file with all pairs
         print(f"\n🔄 Creating final merged file...")
         final_audio = AudioSegment.empty()
         for audio in pair_audios:
             final_audio += audio
-        
+
         final_filename = f"{file_number:02d}_final_all_pairs.mp3"
         final_filepath = Path(self.output_folder) / final_filename
         final_audio.export(final_filepath, format="mp3")
-        
+
         total_duration = len(final_audio) / 1000
         print(f"✅ Created final merged file: {final_filename}")
         print(f"📊 Total duration: {total_duration:.2f} seconds ({total_duration/60:.2f} minutes)")
-        
+
         total_files += 1
-        
+
         print(f"\n🎉 Successfully created {total_files} enhanced audio files")
         print(f"📁 Output folder: {self.output_folder}")
-        
+
         return True
     
-    def create_tts_bilingual_audio(self, vietnamese_text, english_text):
-        """Create bilingual audio using TTS for both languages"""
+    def create_tts_bilingual_audio(self, vietnamese_text, english_text, repeat_times=5):
+        """Create bilingual audio using TTS for both languages.
+
+        repeat_times: how many times to append the English audio (default 5).
+        Use repeat_times=1 in enhanced/merged outputs to avoid repeated sentences.
+        """
         try:
             # Create TTS for Vietnamese
             vi_tts = gTTS(text=vietnamese_text, lang='vi', slow=False)
@@ -302,7 +336,7 @@ class BilingualAudioCreator:
             vi_tts.save(vi_temp_path)
             vi_audio = AudioSegment.from_mp3(vi_temp_path)
             os.unlink(vi_temp_path)
-            
+
             # Create TTS for English
             en_tts = gTTS(text=english_text, lang='en', slow=False)
             with tempfile.NamedTemporaryFile(suffix='.mp3', delete=False) as en_temp:
@@ -310,45 +344,48 @@ class BilingualAudioCreator:
             en_tts.save(en_temp_path)
             en_audio = AudioSegment.from_mp3(en_temp_path)
             os.unlink(en_temp_path)
-            
-            # Combine: Vietnamese 1 time + delay + English 5 times with delays
+
+            # Combine: Vietnamese 1 time + delay + English repeated with delays
             delay = AudioSegment.silent(duration=self.delay_duration)
             combined = vi_audio + delay
-            
-            # Add English 5 times with delays
-            for i in range(5):
+
+            # Add English repeat_times with delays
+            for i in range(max(1, int(repeat_times))):
                 combined += en_audio + delay
-            
+
             return combined
-            
+
         except Exception as e:
             print(f"❌ Error creating TTS bilingual audio: {e}")
             return None
     
-    def create_hybrid_bilingual_audio(self, vietnamese_text, english_segment):
-        """Create bilingual audio using Vietnamese TTS + original English audio"""
+    def create_hybrid_bilingual_audio(self, vietnamese_text, english_segment, repeat_times=5):
+        """Create bilingual audio using Vietnamese TTS + original English audio.
+
+        repeat_times: how many times to append the English segment (default 5).
+        """
         try:
             # Create Vietnamese TTS audio
             vietnamese_audio = self.create_tts_audio(vietnamese_text, None)
             if vietnamese_audio is None:
                 return None
-            
+
             # Extract English audio segment
             main_audio = AudioSegment.from_mp3(self.audio_file)
             start_ms = float(english_segment['start']) * 1000
             end_ms = float(english_segment['end']) * 1000
             english_audio = main_audio[start_ms:end_ms]
-            
-            # Combine: Vietnamese 1 time + delay + English 5 times with delays
+
+            # Combine: Vietnamese 1 time + delay + English repeated with delays
             delay = AudioSegment.silent(duration=self.delay_duration)
             combined = vietnamese_audio + delay
-            
-            # Add English 5 times with delays
-            for i in range(5):
+
+            # Add English repeat_times with delays
+            for i in range(max(1, int(repeat_times))):
                 combined += english_audio + delay
-            
+
             return combined
-            
+
         except Exception as e:
             print(f"❌ Error creating hybrid bilingual audio: {e}")
             return None
