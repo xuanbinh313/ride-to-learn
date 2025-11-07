@@ -2,6 +2,8 @@
 
 import json
 import csv
+from pathlib import Path
+current_dir = Path.cwd()
 
 def convert_json_to_csv(json_file, csv_file):
     """Convert raw.json to CSV format with id, start, end, text columns."""
@@ -30,4 +32,4 @@ def convert_json_to_csv(json_file, csv_file):
 
 if __name__ == "__main__":
     # Convert raw.json to CSV
-    convert_json_to_csv('raw.json', '../shared-volume/raw.csv')
+    convert_json_to_csv(f"{current_dir}/aeneas/raw.json", f"{current_dir}/shared-volume/raw.csv")

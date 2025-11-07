@@ -3,11 +3,13 @@ import json
 import os
 import csv
 from pydub import AudioSegment
+from pathlib import Path
 
+current_dir = Path.cwd()
 # Config
 whisper_url = "http://localhost:9000/asr"
 audio_input = input("Enter the path to the audio file: ")
-audio_file_path = f"../shared-volume/{audio_input if audio_input else 'audio.mp3'}"  # file gốc
+audio_file_path = f"{current_dir}/shared-volume/{audio_input if audio_input else 'audio.mp3'}"  # file gốc
 chunk_length_ms = 10 * 60 * 1000  # 10 phút
 params = {
     "encode": "true",
@@ -63,7 +65,7 @@ for i in range(0, duration_ms, chunk_length_ms):
     offset_seconds += len(chunk) / 1000.0
 
 # Lưu file CSV
-csv_file_path = "raw.csv"
+csv_file_path = f"{current_dir}/whisperx/raw.csv"
 with open(csv_file_path, "w", newline="", encoding="utf-8") as csvfile:
     writer = csv.writer(csvfile)
     writer.writerow(["id", "start", "end", "text"])
