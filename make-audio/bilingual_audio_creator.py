@@ -6,7 +6,8 @@ from pydub import AudioSegment
 from gtts import gTTS
 import tempfile
 import os
-
+from pathlib import Path
+current_dir = Path.cwd()
 class BilingualAudioCreator:
     def __init__(self, learning_file, output_csv, audio_file, output_folder="bilingual_output"):
         self.learning_file = learning_file
@@ -497,11 +498,11 @@ class BilingualAudioCreator:
 
 def main():
     # Configuration
-    learning_file = "../shared-volume/learning.txt"
-    output_csv = "../shared-volume/raw.csv"
+    learning_file = f"{current_dir}/shared-volume/learning.txt"
+    output_csv = f"{current_dir}/shared-volume/raw.csv"
     input_audio_file = input("Enter the path to the main audio file (default: ../shared-volume/audio.mp3): ").strip()
-    audio_file = f"../shared-volume/{input_audio_file}" if input_audio_file else "../shared-volume/audio.mp3"
-    output_folder = "../shared-volume/result"  # Changed folder name for enhanced mode
+    audio_file = f"{current_dir}/shared-volume/{input_audio_file}" if input_audio_file else f"{current_dir}/shared-volume/audio.mp3"
+    output_folder = f"{current_dir}/shared-volume/result"  # Changed folder name for enhanced mode
     
     print("🎯 Bilingual Audio Creator - Enhanced Mode")
     print("=" * 50)
