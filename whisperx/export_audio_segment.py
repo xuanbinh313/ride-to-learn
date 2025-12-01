@@ -80,15 +80,57 @@ def export_audio_segment(csv_file, audio_file, output_file, start_time=None, end
     print(f"Duration: {duration:.2f} seconds ({duration/60:.2f} minutes)")
 
 
+def get_time_range_from_csv(csv_file):
+    """
+    Get start and end time from CSV file.
+    Start time from the 'start' column of first data row.
+    End time from the 'end' column of last data row.
+    
+    Args:
+        csv_file: Path to the CSV file
+    
+    Returns:
+        tuple: (start_time, end_time)
+    """
+    rows = []
+    with open(csv_file, 'r', encoding='utf-8') as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            try:
+                rows.append({
+                    'start': float(row['start']),
+                    'end': float(row['end'])
+                })
+            except (ValueError, KeyError):
+                continue
+    
+    if not rows:
+        print("Error: No valid rows found in CSV")
+        return None, None
+    
+    # Get start time from first row, end time from last row
+    start_time = rows[0]['start']
+    end_time = rows[-1]['end']
+    
+    return start_time, end_time
+
+
 if __name__ == "__main__":
     # Configuration
     csv_file = f"{current_dir}/whisperx/split.csv"
     output_file = f"{current_dir}/whisperx/split.mp3"
     audio_file = f"{current_dir}/shared-volume/audio.mp3"
     
-    # Timestamps from your selection
-    start_time = 1131.96
-    end_time = 1365.08
+    # Get dynamic timestamps from CSV (first row start to last row end)
+    start_time, end_time = get_time_range_from_csv(csv_file)
     
-    # Export the audio segment
-    export_audio_segment(csv_file, audio_file, output_file, start_time, end_time)
+    if start_time is not None and end_time is not None:
+        print(f"Extracted time range from CSV:")
+        print(f"  Start time: {start_time}s (from first row)")
+        print(f"  End time: {end_time}s (from last row)")
+        print(f"  Duration: {end_time - start_time:.2f} seconds ({(end_time - start_time)/60:.2f} minutes)")
+        
+        # Export the audio segment
+        export_audio_segment(csv_file, audio_file, output_file, start_time, end_time)
+    else:
+        print("Error: Could not extract time range from CSV")
