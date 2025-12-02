@@ -1,9 +1,11 @@
 import csv
 import json
 import re
+import asyncio
 from pathlib import Path
 from pydub import AudioSegment
 from gtts import gTTS
+from googletrans import Translator
 import tempfile
 import os
 from pathlib import Path
@@ -16,6 +18,7 @@ class BilingualAudioCreator:
         self.output_folder = output_folder
         self.segments = []
         self.delay_duration = 5000  # 5 seconds in milliseconds
+        self.translator = Translator()
         
     def load_segments(self):
         """Load segments from output.json"""
@@ -34,70 +37,114 @@ class BilingualAudioCreator:
             return False
         return True
     
-    def parse_learning_file(self):
-        """Parse learning.txt to extract Vietnamese-English pairs"""
+    async def translate_text(self, text, dest_language='vi'):
+        """Translate text to destination language using Google Translate"""
+        try:
+            loop = asyncio.get_event_loop()
+            translated = await loop.run_in_executor(None, self.translator.translate, text, dest_language)
+            return translated.text
+        except Exception as e:
+            print(f"❌ Error translating text: {e}")
+            return ""
+    
+    async def parse_learning_file(self):
+        """Parse learning.txt to extract English lines and translate them to Vietnamese"""
         pairs = []
+        groups = []  # Track which pairs belong to which group
+        current_group = []
+        
         try:
             with open(self.learning_file, 'r', encoding='utf-8') as f:
                 raw_lines = f.readlines()
 
-            # Clean lines and skip empty lines
+            # Clean lines
             lines = [ln.strip() for ln in raw_lines if ln.strip()]
 
-            prev_line = None
-            prev_lang = None
-
-            for line in lines:
-                lang = 'en' if self.is_english_line(line) else 'vi'
-
-                if prev_line is None:
-                    prev_line = line
-                    prev_lang = lang
+            print(f"📝 Found {len(lines)} lines, processing...")
+            
+            # Translate each English line to Vietnamese
+            pair_index = 0
+            for i, line in enumerate(lines, 1):
+                # Check for group separator
+                if line == "---":
+                    if current_group:
+                        groups.append(current_group.copy())
+                        current_group = []
+                    print(f"   🔸 Group separator detected at line {i}")
                     continue
-
-                # We have a previous unpaired line. Pair depending on detected languages.
-                if prev_lang == 'en' and lang == 'vi':
-                    pairs.append({'english': prev_line, 'vietnamese': line})
-                elif prev_lang == 'vi' and lang == 'en':
-                    pairs.append({'english': line, 'vietnamese': prev_line})
+                
+                english_text = line
+                print(f"   Translating {i}/{len(lines)}: {english_text[:50]}...")
+                vietnamese_text = await self.translate_text(english_text, 'vi')
+                
+                if vietnamese_text:
+                    pairs.append({
+                        'english': english_text,
+                        'vietnamese': vietnamese_text,
+                        'pair_index': pair_index
+                    })
+                    current_group.append(pair_index)
+                    pair_index += 1
+                    print(f"   ✅ Vietnamese: {vietnamese_text[:50]}...")
                 else:
-                    # Ambiguous (both detected same language) - fallback to adjacent pairing
-                    # Assume prev is english and current is vietnamese to preserve original intent
-                    pairs.append({'english': prev_line, 'vietnamese': line})
+                    print(f"   ⚠️ Translation failed for: {english_text[:50]}...")
+            
+            # Add remaining pairs to last group
+            if current_group:
+                groups.append(current_group)
 
-                # Reset previous
-                prev_line = None
-                prev_lang = None
-
-            # If there's a dangling line at the end, add it as an incomplete pair
-            if prev_line is not None:
-                if prev_lang == 'en':
-                    pairs.append({'english': prev_line, 'vietnamese': ''})
-                else:
-                    pairs.append({'english': '', 'vietnamese': prev_line})
-
-            print(f"📝 Found {len(pairs)} Vietnamese-English pairs")
-            return pairs
+            print(f"📝 Successfully created {len(pairs)} Vietnamese-English pairs in {len(groups)} groups")
+            return pairs, groups
 
         except Exception as e:
             print(f"❌ Error parsing learning file: {e}")
-            return []
+            return [], []
     
-    def is_english_line(self, line):
-        """Check if a line is likely English text"""
-        # Simple heuristic: check for common English words and patterns
-        english_indicators = ['the', 'and', 'to', 'of', 'a', 'in', 'is', 'you', 'that', 'it', 'he', 'was', 'for', 'on', 'are', 'as', 'with', 'his', 'they', 'i', 'at', 'be', 'this', 'have', 'from', 'or', 'one', 'had', 'by', 'word', 'but', 'not', 'what', 'all', 'were', 'we', 'when', 'your', 'can', 'said', 'there', 'each', 'which', 'she', 'do', 'how', 'their', 'if', 'will', 'up', 'other', 'about', 'out', 'many', 'then', 'them', 'these', 'so', 'some', 'her', 'would', 'make', 'like', 'into', 'him', 'has', 'two', 'more', 'go', 'no', 'way', 'could', 'my', 'than', 'first', 'been', 'call', 'who', 'its', 'now', 'find', 'long', 'down', 'day', 'did', 'get', 'come', 'made', 'may', 'part']
-        
-        line_lower = line.lower()
-        word_count = 0
-        words = re.findall(r'\b\w+\b', line_lower)
-        
-        for word in words:
-            if word in english_indicators:
-                word_count += 1
-        
-        # If 20% or more of words are common English words, consider it English
-        return len(words) > 0 and (word_count / len(words)) >= 0.2
+
+    
+    def create_english_only_audio(self, pair_indices, pairs, output_path):
+        """Create English-only audio by concatenating segments for given pair indices"""
+        try:
+            main_audio = AudioSegment.from_mp3(self.audio_file)
+            combined_audio = AudioSegment.empty()
+            
+            print(f"   🎵 Creating English-only audio for {len(pair_indices)} segments...")
+            
+            for idx in pair_indices:
+                if idx >= len(pairs):
+                    continue
+                    
+                pair = pairs[idx]
+                english_text = pair.get('english', '')
+                
+                # Find matching audio segment
+                segment = self.find_audio_segment(english_text)
+                
+                if segment:
+                    start_ms = float(segment['start']) * 1000
+                    end_ms = float(segment['end']) * 1000
+                    english_audio = main_audio[start_ms:end_ms]
+                    combined_audio += english_audio
+                    print(f"      ✅ Added segment: {english_text[:40]}... ({float(segment['start']):.2f}s - {float(segment['end']):.2f}s)")
+                else:
+                    print(f"      ⚠️ No audio found for: {english_text[:40]}...")
+            
+            if len(combined_audio) > 0:
+                speed = 1.2
+                new_audio = combined_audio._spawn(combined_audio.raw_data, overrides={
+                    "frame_rate": int(combined_audio.frame_rate * speed)
+                })
+                new_audio.export(output_path, format="mp3")
+                duration = len(new_audio) / 1000
+                print(f"   ✅ Created English-only audio: {output_path.name} (Duration: {duration:.2f}s)")
+                return True
+            else:
+                print(f"   ⚠️ No audio segments to export")
+                return False
+                
+        except Exception as e:
+            print(f"   ❌ Error creating English-only audio: {e}")
+            return False
     
     def find_audio_segment(self, english_text):
         """Find matching audio segment for English text"""
@@ -191,7 +238,7 @@ class BilingualAudioCreator:
             print(f"❌ Error creating bilingual audio: {e}")
             return False
     
-    def create_enhanced_progressive_audio(self, pairs):
+    async def create_enhanced_progressive_audio(self, pairs, groups=None):
         """Create progressive audio files like enhanced_speak_my_self.py"""
         print(f"\n🎤 Creating enhanced progressive audio files...")
         
@@ -259,18 +306,27 @@ class BilingualAudioCreator:
         file_number = 1
         group_number = 1
 
-        # Work in groups of 10 pairs
+        # Work in groups based on --- separators or default 10 pairs
         remaining_audios = pair_audios.copy()
         remaining_single_audios = single_pair_audios.copy()
+        processed_pairs = 0
 
         while remaining_audios:
             print(f"\n🔄 Processing Group {group_number}...")
 
-            # Take up to 10 pairs for this group
-            current_group = remaining_audios[:10]
-            current_single_group = remaining_single_audios[:10]
-            remaining_audios = remaining_audios[10:]
-            remaining_single_audios = remaining_single_audios[10:]
+            # Determine group size
+            if groups and group_number - 1 < len(groups):
+                group_indices = groups[group_number - 1]
+                group_size = len(group_indices)
+            else:
+                group_size = min(10, len(remaining_audios))
+                group_indices = list(range(processed_pairs, processed_pairs + group_size))
+
+            # Take pairs for this group
+            current_group = remaining_audios[:group_size]
+            current_single_group = remaining_single_audios[:group_size]
+            remaining_audios = remaining_audios[group_size:]
+            remaining_single_audios = remaining_single_audios[group_size:]
 
             # Create progressive files for this group
             for i in range(len(current_group)):
@@ -299,7 +355,17 @@ class BilingualAudioCreator:
                     total_files += 1
                     print(f"   ✅ Created: {combo_filename} (Combo of Pairs 1-{i+1} of Group {group_number})")
                     file_number += 1
+            
+            # Create English-only audio for this group
+            if groups and group_number - 1 < len(groups):
+                english_only_filename = f"{file_number:02d}.mp3"
+                english_only_filepath = Path(self.output_folder) / english_only_filename
+                if self.create_english_only_audio(group_indices, pairs, english_only_filepath):
+                    total_files += 1
+                    print(f"   ✅ Created English-only: {english_only_filename} (Group {group_number})")
+                    file_number += 1
 
+            processed_pairs += group_size
             group_number += 1
 
         # Create final merged file with all pairs
@@ -391,143 +457,42 @@ class BilingualAudioCreator:
             print(f"❌ Error creating hybrid bilingual audio: {e}")
             return None
 
-    def merge_all_audio_files(self):
-        """Merge all created MP3 files into one single file and remove individual files"""
-        try:
-            # Get all MP3 files from output folder
-            output_path = Path(self.output_folder)
-            mp3_files = sorted(list(output_path.glob("pair_*.mp3")))
-            
-            if not mp3_files:
-                print("❌ No MP3 files found to merge")
-                return False
-            
-            print(f"🔄 Merging {len(mp3_files)} audio files...")
-            
-            # Start with empty audio
-            merged_audio = AudioSegment.empty()
-            
-            # Add each file to the merged audio
-            for i, mp3_file in enumerate(mp3_files, 1):
-                print(f"   Adding file {i}/{len(mp3_files)}: {mp3_file.name}")
-                audio_segment = AudioSegment.from_mp3(mp3_file)
-                merged_audio += audio_segment
-            
-            # Export merged file
-            merged_output_path = output_path / "77-79.mp3"
-            merged_audio.export(merged_output_path, format="mp3")
-            
-            total_duration = len(merged_audio) / 1000
-            print(f"✅ Successfully merged all files into: {merged_output_path}")
-            print(f"📊 Total duration: {total_duration:.2f} seconds ({total_duration/60:.2f} minutes)")
-            
-            # Remove individual MP3 files~~
-            print(f"🗑️  Cleaning up individual files...")
-            for mp3_file in mp3_files:
-                try:
-                    mp3_file.unlink()
-                    print(f"   Deleted: {mp3_file.name}")
-                except Exception as e:
-                    print(f"   ⚠️ Could not delete {mp3_file.name}: {e}")
-            
-            print(f"✅ Cleanup complete. Only merged file remains.")
-            
-            return True
-            
-        except Exception as e:
-            print(f"❌ Error merging audio files: {e}")
-            return False
-
-    def process_all_pairs(self, enhanced_mode=False):
-        """Process all Vietnamese-English pairs"""
+    async def process_all_pairs(self):
+        """Process all Vietnamese-English pairs using enhanced mode"""
         # Load segments
         if not self.load_segments():
             return
         
-        # Parse learning file
-        pairs = self.parse_learning_file()
+        # Parse learning file and translate
+        result = await self.parse_learning_file()
+        if isinstance(result, tuple):
+            pairs, groups = result
+        else:
+            pairs = result
+            groups = None
+            
         if not pairs:
             return
         
-        if enhanced_mode:
-            # Use enhanced progressive audio generation
-            return self.create_enhanced_progressive_audio(pairs)
-        
-        # Original mode: Create individual files and merge
-        # Create output directory
-        os.makedirs(self.output_folder, exist_ok=True)
-        
-        success_count = 0
-        
-        for i, pair in enumerate(pairs, 1):
-            vietnamese_text = pair.get('vietnamese', '')
-            english_text = pair.get('english', '')
-            
-            if not vietnamese_text or not english_text:
-                print(f"⚠️ Skipping incomplete pair {i}")
-                continue
-            
-            print(f"\n🔄 Processing pair {i}/{len(pairs)}")
-            print(f"   Vietnamese: {vietnamese_text[:50]}...")
-            print(f"   English: {english_text[:50]}...")
-            
-            # Find matching audio segment
-            segment = self.find_audio_segment(english_text)
-            
-            if segment is None:
-                print(f"   ❌ No matching audio found for: {english_text[:30]}...")
-                continue
-            print(f"✅ Found audio segment: {float(segment['start']):.2f}s - {float(segment['end']):.2f}s")
-            
-            # Create output filename
-            safe_name = re.sub(r'[^\w\s-]', '', english_text[:30])
-            safe_name = re.sub(r'[-\s]+', '_', safe_name)
-            output_path = Path(self.output_folder) / f"pair_{i:03d}_{safe_name}.mp3"
-            
-            # Create bilingual audio
-            if self.create_bilingual_audio(vietnamese_text, segment, output_path):
-                success_count += 1
-        
-        print(f"\n🎉 Successfully created {success_count}/{len(pairs)} bilingual audio files")
-        print(f"📁 Output folder: {self.output_folder}")
-        
-        # Merge all audio files into one
-        if success_count > 0:
-            print(f"\n🔄 Merging all audio files...")
-            self.merge_all_audio_files()
+        # Use enhanced progressive audio generation
+        return await self.create_enhanced_progressive_audio(pairs, groups)
 
-def main():
+async def main():
     # Configuration
     learning_file = f"{current_dir}/shared-volume/learning.txt"
     output_csv = f"{current_dir}/shared-volume/raw.csv"
     input_audio_file = input("Enter the path to the main audio file (default: ../shared-volume/audio.mp3): ").strip()
     audio_file = f"{current_dir}/shared-volume/{input_audio_file}" if input_audio_file else f"{current_dir}/shared-volume/audio.mp3"
-    output_folder = f"{current_dir}/shared-volume/result"  # Changed folder name for enhanced mode
+    output_folder = f"{current_dir}/shared-volume/result"
     
     print("🎯 Bilingual Audio Creator - Enhanced Mode")
     print("=" * 50)
-    
-    # Ask user which mode to use
-    print("Choose mode:")
-    print("1. Original mode (individual files + single merged file)")
-    print("2. Enhanced mode (progressive combinations like enhanced_speak_my_self.py)")
-    
-    try:
-        choice = input("Enter your choice (1 or 2): ").strip()
-        enhanced_mode = choice == "2"
-            
-    except KeyboardInterrupt:
-        print("\n❌ Operation cancelled by user")
-        return
-    except Exception:
-        print("⚠️ Invalid input, using Enhanced mode as default")
-        enhanced_mode = True
     
     # Create processor
     processor = BilingualAudioCreator(learning_file, output_csv, audio_file, output_folder)
     
     # Process all pairs
-    processor.process_all_pairs(enhanced_mode=enhanced_mode)
+    await processor.process_all_pairs()
 
 if __name__ == "__main__":
-    main()
+    asyncio.run(main())
