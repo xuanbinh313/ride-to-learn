@@ -328,9 +328,18 @@ class BilingualAudioCreator:
             remaining_audios = remaining_audios[group_size:]
             remaining_single_audios = remaining_single_audios[group_size:]
 
+            # Create English-only audio FIRST for this group
+            if groups and group_number - 1 < len(groups):
+                english_only_filename = f"{file_number:02d}.mp3"
+                english_only_filepath = Path(self.output_folder) / english_only_filename
+                if self.create_english_only_audio(group_indices, pairs, english_only_filepath):
+                    total_files += 1
+                    print(f"   ✅ Created English-only: {english_only_filename} (Group {group_number})")
+                    file_number += 1
+
             # Create progressive files for this group
             for i in range(len(current_group)):
-                # Individual pair (odd numbers: 01, 03, 05, ...)
+                # Individual pair (odd numbers after english-only)
                 filename = f"{file_number:02d}.mp3"
                 filepath = Path(self.output_folder) / filename
                 current_group[i].export(filepath, format="mp3")
@@ -338,7 +347,7 @@ class BilingualAudioCreator:
                 print(f"   ✅ Created: {filename} (Pair {i+1} of Group {group_number})")
                 file_number += 1
 
-                # Progressive combination (even numbers: 02, 04, 06, ...)
+                # Progressive combination (even numbers)
                 # Use single-play audios for group combinations (Vietnamese 1 time + English 1 time)
                 if i > 0:  # Skip the first one as it's just a single pair
                     combined_audio = AudioSegment.empty()
@@ -355,32 +364,18 @@ class BilingualAudioCreator:
                     total_files += 1
                     print(f"   ✅ Created: {combo_filename} (Combo of Pairs 1-{i+1} of Group {group_number})")
                     file_number += 1
-            
-            # Create English-only audio for this group
+
+            # Create English-only audio AGAIN at the END of this group
             if groups and group_number - 1 < len(groups):
-                english_only_filename = f"{file_number:02d}.mp3"
-                english_only_filepath = Path(self.output_folder) / english_only_filename
-                if self.create_english_only_audio(group_indices, pairs, english_only_filepath):
+                english_only_end_filename = f"{file_number:02d}.mp3"
+                english_only_end_filepath = Path(self.output_folder) / english_only_end_filename
+                if self.create_english_only_audio(group_indices, pairs, english_only_end_filepath):
                     total_files += 1
-                    print(f"   ✅ Created English-only: {english_only_filename} (Group {group_number})")
+                    print(f"   ✅ Created English-only (end): {english_only_end_filename} (Group {group_number})")
                     file_number += 1
 
             processed_pairs += group_size
             group_number += 1
-
-        # Create final merged file with all pairs
-        print(f"\n🔄 Creating final merged file...")
-        final_audio = AudioSegment.empty()
-        for audio in pair_audios:
-            final_audio += audio
-
-        final_filename = f"{file_number:02d}_final_all_pairs.mp3"
-        final_filepath = Path(self.output_folder) / final_filename
-        final_audio.export(final_filepath, format="mp3")
-
-        total_duration = len(final_audio) / 1000
-        print(f"✅ Created final merged file: {final_filename}")
-        print(f"📊 Total duration: {total_duration:.2f} seconds ({total_duration/60:.2f} minutes)")
 
         total_files += 1
 
