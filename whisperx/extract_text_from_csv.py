@@ -35,7 +35,8 @@ def extract_text_from_csv(csv_file, output_file):
         # Split by sentence delimiters (. or ?)
         import re
         # Split by . or ? but keep the delimiter
-        sentences = re.split(r'(?<![A-Z])([.?])', joined_text)
+        pattern = r'(?<!\bMr)(?<!\bMs)(?<!\bmr)(?<!\bms)(?<!\bp)(?<!\ba)([.?!])'
+        sentences = re.split(pattern, joined_text)
         
         # Recombine sentences with their delimiters
         final_sentences = []
