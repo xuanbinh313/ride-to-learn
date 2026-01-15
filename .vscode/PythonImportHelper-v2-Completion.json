@@ -1,0 +1,1086 @@
+[
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "csv",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "csv",
+        "description": "csv",
+        "detail": "csv",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "subprocess",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "subprocess",
+        "description": "subprocess",
+        "detail": "subprocess",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "asyncio",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "asyncio",
+        "description": "asyncio",
+        "detail": "asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "AudioSegment",
+        "importPath": "pydub",
+        "description": "pydub",
+        "isExtraImport": true,
+        "detail": "pydub",
+        "documentation": {}
+    },
+    {
+        "label": "AudioSegment",
+        "importPath": "pydub",
+        "description": "pydub",
+        "isExtraImport": true,
+        "detail": "pydub",
+        "documentation": {}
+    },
+    {
+        "label": "AudioSegment",
+        "importPath": "pydub",
+        "description": "pydub",
+        "isExtraImport": true,
+        "detail": "pydub",
+        "documentation": {}
+    },
+    {
+        "label": "AudioSegment",
+        "importPath": "pydub",
+        "description": "pydub",
+        "isExtraImport": true,
+        "detail": "pydub",
+        "documentation": {}
+    },
+    {
+        "label": "AudioSegment",
+        "importPath": "pydub",
+        "description": "pydub",
+        "isExtraImport": true,
+        "detail": "pydub",
+        "documentation": {}
+    },
+    {
+        "label": "AudioSegment",
+        "importPath": "pydub",
+        "description": "pydub",
+        "isExtraImport": true,
+        "detail": "pydub",
+        "documentation": {}
+    },
+    {
+        "label": "AudioSegment",
+        "importPath": "pydub",
+        "description": "pydub",
+        "isExtraImport": true,
+        "detail": "pydub",
+        "documentation": {}
+    },
+    {
+        "label": "AudioSegment",
+        "importPath": "pydub",
+        "description": "pydub",
+        "isExtraImport": true,
+        "detail": "pydub",
+        "documentation": {}
+    },
+    {
+        "label": "AudioSegment",
+        "importPath": "pydub",
+        "description": "pydub",
+        "isExtraImport": true,
+        "detail": "pydub",
+        "documentation": {}
+    },
+    {
+        "label": "AudioSegment",
+        "importPath": "pydub",
+        "description": "pydub",
+        "isExtraImport": true,
+        "detail": "pydub",
+        "documentation": {}
+    },
+    {
+        "label": "AudioSegment",
+        "importPath": "pydub",
+        "description": "pydub",
+        "isExtraImport": true,
+        "detail": "pydub",
+        "documentation": {}
+    },
+    {
+        "label": "AudioSegment",
+        "importPath": "pydub",
+        "description": "pydub",
+        "isExtraImport": true,
+        "detail": "pydub",
+        "documentation": {}
+    },
+    {
+        "label": "gTTS",
+        "importPath": "gtts",
+        "description": "gtts",
+        "isExtraImport": true,
+        "detail": "gtts",
+        "documentation": {}
+    },
+    {
+        "label": "gTTS",
+        "importPath": "gtts",
+        "description": "gtts",
+        "isExtraImport": true,
+        "detail": "gtts",
+        "documentation": {}
+    },
+    {
+        "label": "gTTS",
+        "importPath": "gtts",
+        "description": "gtts",
+        "isExtraImport": true,
+        "detail": "gtts",
+        "documentation": {}
+    },
+    {
+        "label": "gTTS",
+        "importPath": "gtts",
+        "description": "gtts",
+        "isExtraImport": true,
+        "detail": "gtts",
+        "documentation": {}
+    },
+    {
+        "label": "gTTS",
+        "importPath": "gtts",
+        "description": "gtts",
+        "isExtraImport": true,
+        "detail": "gtts",
+        "documentation": {}
+    },
+    {
+        "label": "gTTS",
+        "importPath": "gtts",
+        "description": "gtts",
+        "isExtraImport": true,
+        "detail": "gtts",
+        "documentation": {}
+    },
+    {
+        "label": "gTTS",
+        "importPath": "gtts",
+        "description": "gtts",
+        "isExtraImport": true,
+        "detail": "gtts",
+        "documentation": {}
+    },
+    {
+        "label": "Translator",
+        "importPath": "googletrans",
+        "description": "googletrans",
+        "isExtraImport": true,
+        "detail": "googletrans",
+        "documentation": {}
+    },
+    {
+        "label": "Translator",
+        "importPath": "googletrans",
+        "description": "googletrans",
+        "isExtraImport": true,
+        "detail": "googletrans",
+        "documentation": {}
+    },
+    {
+        "label": "tempfile",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tempfile",
+        "description": "tempfile",
+        "detail": "tempfile",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "case",
+        "importPath": "unittest",
+        "description": "unittest",
+        "isExtraImport": true,
+        "detail": "unittest",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "sys,",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys.",
+        "description": "sys.",
+        "detail": "sys.",
+        "documentation": {}
+    },
+    {
+        "label": "QApplication",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QWidget",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QVBoxLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLabel",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLineEdit",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QPushButton",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QFileDialog",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QListWidgetItem",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QMessageBox",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QListWidget",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "Qt",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "split_raw_to_english_vietnamese",
+        "importPath": "main",
+        "description": "main",
+        "isExtraImport": true,
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
+        "documentation": {}
+    },
+    {
+        "label": "yt_dlp",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "yt_dlp",
+        "description": "yt_dlp",
+        "detail": "yt_dlp",
+        "documentation": {}
+    },
+    {
+        "label": "convert_json_to_csv",
+        "kind": 2,
+        "importPath": "aeneas.json_to_csv",
+        "description": "aeneas.json_to_csv",
+        "peekOfCode": "def convert_json_to_csv(json_file, csv_file):\n    \"\"\"Convert raw.json to CSV format with id, start, end, text columns.\"\"\"\n    # Read the JSON file\n    with open(json_file, 'r', encoding='utf-8') as f:\n        data = json.load(f)\n    # Create CSV file\n    with open(csv_file, 'w', newline='', encoding='utf-8') as f:\n        writer = csv.writer(f)\n        # Write header\n        writer.writerow(['id', 'start', 'end', 'text'])",
+        "detail": "aeneas.json_to_csv",
+        "documentation": {}
+    },
+    {
+        "label": "current_dir",
+        "kind": 5,
+        "importPath": "aeneas.json_to_csv",
+        "description": "aeneas.json_to_csv",
+        "peekOfCode": "current_dir = Path.cwd()\ndef convert_json_to_csv(json_file, csv_file):\n    \"\"\"Convert raw.json to CSV format with id, start, end, text columns.\"\"\"\n    # Read the JSON file\n    with open(json_file, 'r', encoding='utf-8') as f:\n        data = json.load(f)\n    # Create CSV file\n    with open(csv_file, 'w', newline='', encoding='utf-8') as f:\n        writer = csv.writer(f)\n        # Write header",
+        "detail": "aeneas.json_to_csv",
+        "documentation": {}
+    },
+    {
+        "label": "fileName",
+        "kind": 5,
+        "importPath": "aeneas.script",
+        "description": "aeneas.script",
+        "peekOfCode": "fileName = input(\"Enter the file name (with extension) located in shared-volume folder (default is audio.mp3): \")\npathFile = \"audio.wav\" if not fileName else fileName\ncmd = [\n    \"python3\",\n    \"-m\",\n    \"aeneas.tools.execute_task\",\n    f\"./assets/{pathFile}\",\n    f\"./assets/raw.txt\",\n    \"task_language=eng|os_task_file_format=json|is_text_type=plain\",\n    \"raw.json\",",
+        "detail": "aeneas.script",
+        "documentation": {}
+    },
+    {
+        "label": "pathFile",
+        "kind": 5,
+        "importPath": "aeneas.script",
+        "description": "aeneas.script",
+        "peekOfCode": "pathFile = \"audio.wav\" if not fileName else fileName\ncmd = [\n    \"python3\",\n    \"-m\",\n    \"aeneas.tools.execute_task\",\n    f\"./assets/{pathFile}\",\n    f\"./assets/raw.txt\",\n    \"task_language=eng|os_task_file_format=json|is_text_type=plain\",\n    \"raw.json\",\n]",
+        "detail": "aeneas.script",
+        "documentation": {}
+    },
+    {
+        "label": "cmd",
+        "kind": 5,
+        "importPath": "aeneas.script",
+        "description": "aeneas.script",
+        "peekOfCode": "cmd = [\n    \"python3\",\n    \"-m\",\n    \"aeneas.tools.execute_task\",\n    f\"./assets/{pathFile}\",\n    f\"./assets/raw.txt\",\n    \"task_language=eng|os_task_file_format=json|is_text_type=plain\",\n    \"raw.json\",\n]\n# In log trực tiếp ra terminal khi chạy",
+        "detail": "aeneas.script",
+        "documentation": {}
+    },
+    {
+        "label": "BilingualAudioCreator",
+        "kind": 6,
+        "importPath": "make-audio.bilingual_audio_creator",
+        "description": "make-audio.bilingual_audio_creator",
+        "peekOfCode": "class BilingualAudioCreator:\n    def __init__(self, learning_file, output_csv, audio_file, output_folder=\"bilingual_output\"):\n        self.learning_file = learning_file\n        self.output_csv = output_csv\n        self.audio_file = audio_file\n        self.output_folder = output_folder\n        self.segments = []\n        self.delay_duration = 5000  # 5 seconds in milliseconds\n        self.translator = Translator()\n    def load_segments(self):",
+        "detail": "make-audio.bilingual_audio_creator",
+        "documentation": {}
+    },
+    {
+        "label": "current_dir",
+        "kind": 5,
+        "importPath": "make-audio.bilingual_audio_creator",
+        "description": "make-audio.bilingual_audio_creator",
+        "peekOfCode": "current_dir = Path.cwd()\nclass BilingualAudioCreator:\n    def __init__(self, learning_file, output_csv, audio_file, output_folder=\"bilingual_output\"):\n        self.learning_file = learning_file\n        self.output_csv = output_csv\n        self.audio_file = audio_file\n        self.output_folder = output_folder\n        self.segments = []\n        self.delay_duration = 5000  # 5 seconds in milliseconds\n        self.translator = Translator()",
+        "detail": "make-audio.bilingual_audio_creator",
+        "documentation": {}
+    },
+    {
+        "label": "FastAudioCreator",
+        "kind": 6,
+        "importPath": "make-audio.fast_audio",
+        "description": "make-audio.fast_audio",
+        "peekOfCode": "class FastAudioCreator:\n    def __init__(self, learning_file, audio_file, output_folder=\"fast_output\"):\n        self.learning_file = learning_file\n        self.audio_file = audio_file\n        self.output_folder = output_folder\n        self.delay_duration = 2000  # 2 seconds in milliseconds\n        self.translator = Translator()\n    async def translate_text_sync(self, text, dest_language='vi'):\n        \"\"\"Translate text to destination language using Google Translate\"\"\"\n        try:",
+        "detail": "make-audio.fast_audio",
+        "documentation": {}
+    },
+    {
+        "label": "current_dir",
+        "kind": 5,
+        "importPath": "make-audio.fast_audio",
+        "description": "make-audio.fast_audio",
+        "peekOfCode": "current_dir = Path.cwd()\nclass FastAudioCreator:\n    def __init__(self, learning_file, audio_file, output_folder=\"fast_output\"):\n        self.learning_file = learning_file\n        self.audio_file = audio_file\n        self.output_folder = output_folder\n        self.delay_duration = 2000  # 2 seconds in milliseconds\n        self.translator = Translator()\n    async def translate_text_sync(self, text, dest_language='vi'):\n        \"\"\"Translate text to destination language using Google Translate\"\"\"",
+        "detail": "make-audio.fast_audio",
+        "documentation": {}
+    },
+    {
+        "label": "BilingualAudioCreator",
+        "kind": 6,
+        "importPath": "whisperx.bilingual_audio_creator",
+        "description": "whisperx.bilingual_audio_creator",
+        "peekOfCode": "class BilingualAudioCreator:\n    def __init__(self, learning_file, output_csv, audio_file, output_folder=\"bilingual_output\"):\n        self.learning_file = learning_file\n        self.output_csv = output_csv\n        self.audio_file = audio_file\n        self.output_folder = output_folder\n        self.segments = []\n        self.delay_duration = 5000  # 5 seconds in milliseconds\n    def load_segments(self):\n        \"\"\"Load segments from output.json\"\"\"",
+        "detail": "whisperx.bilingual_audio_creator",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "whisperx.bilingual_audio_creator",
+        "description": "whisperx.bilingual_audio_creator",
+        "peekOfCode": "def main():\n    # Configuration\n    learning_file = \"learning.txt\"\n    output_csv = \"raw.csv\"\n    audio_file = \"../assets/Socializing and Parties.wav\"\n    output_folder = \"enhanced_output_vi\"  # Changed folder name for enhanced mode\n    print(\"🎯 Bilingual Audio Creator - Enhanced Mode\")\n    print(\"=\" * 50)\n    # Ask user which mode to use\n    print(\"Choose mode:\")",
+        "detail": "whisperx.bilingual_audio_creator",
+        "documentation": {}
+    },
+    {
+        "label": "export_audio_segment",
+        "kind": 2,
+        "importPath": "whisperx.export_audio_segment",
+        "description": "whisperx.export_audio_segment",
+        "peekOfCode": "def export_audio_segment(csv_file, audio_file, output_file, start_time=None, end_time=None):\n    \"\"\"\n    Export audio segment from start_time to end_time based on CSV timestamps.\n    Args:\n        csv_file: Path to the CSV file containing timestamps\n        audio_file: Path to the original audio file\n        output_file: Path for the output audio file\n        start_time: Start time in seconds (optional, will use first timestamp if not provided)\n        end_time: End time in seconds (optional, will use last timestamp if not provided)\n    \"\"\"",
+        "detail": "whisperx.export_audio_segment",
+        "documentation": {}
+    },
+    {
+        "label": "get_time_range_from_csv",
+        "kind": 2,
+        "importPath": "whisperx.export_audio_segment",
+        "description": "whisperx.export_audio_segment",
+        "peekOfCode": "def get_time_range_from_csv(csv_file):\n    \"\"\"\n    Get start and end time from CSV file.\n    Start time from the 'start' column of first data row.\n    End time from the 'end' column of last data row.\n    Args:\n        csv_file: Path to the CSV file\n    Returns:\n        tuple: (start_time, end_time)\n    \"\"\"",
+        "detail": "whisperx.export_audio_segment",
+        "documentation": {}
+    },
+    {
+        "label": "current_dir",
+        "kind": 5,
+        "importPath": "whisperx.export_audio_segment",
+        "description": "whisperx.export_audio_segment",
+        "peekOfCode": "current_dir = Path.cwd()\ndef export_audio_segment(csv_file, audio_file, output_file, start_time=None, end_time=None):\n    \"\"\"\n    Export audio segment from start_time to end_time based on CSV timestamps.\n    Args:\n        csv_file: Path to the CSV file containing timestamps\n        audio_file: Path to the original audio file\n        output_file: Path for the output audio file\n        start_time: Start time in seconds (optional, will use first timestamp if not provided)\n        end_time: End time in seconds (optional, will use last timestamp if not provided)",
+        "detail": "whisperx.export_audio_segment",
+        "documentation": {}
+    },
+    {
+        "label": "extract_text_from_csv",
+        "kind": 2,
+        "importPath": "whisperx.extract_text_from_csv",
+        "description": "whisperx.extract_text_from_csv",
+        "peekOfCode": "def extract_text_from_csv(csv_file, output_file):\n    \"\"\"\n    Read CSV file and extract all text from the 'text' column,\n    join them together, and split by sentence delimiters (. or ?)\n    \"\"\"\n    try:\n        text_content = []\n        # Read the CSV file\n        with open(csv_file, 'r', encoding='utf-8') as file:\n            csv_reader = csv.DictReader(file)",
+        "detail": "whisperx.extract_text_from_csv",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "whisperx.extract_text_from_csv",
+        "description": "whisperx.extract_text_from_csv",
+        "peekOfCode": "def main():\n    \"\"\"Main function to extract text from raw.csv to raw.txt\"\"\"\n    csv_file = f\"{current_dir}/whisperx/raw.csv\"\n    output_file = f\"{current_dir}/shared-volume/raw.txt\"\n    print(\"🔄 CSV Text Extractor\")\n    print(\"=\" * 30)\n    # Check if CSV file exists\n    if not os.path.exists(csv_file):\n        print(f\"❌ CSV file '{csv_file}' not found in current directory\")\n        return",
+        "detail": "whisperx.extract_text_from_csv",
+        "documentation": {}
+    },
+    {
+        "label": "current_dir",
+        "kind": 5,
+        "importPath": "whisperx.extract_text_from_csv",
+        "description": "whisperx.extract_text_from_csv",
+        "peekOfCode": "current_dir = Path.cwd()\ndef extract_text_from_csv(csv_file, output_file):\n    \"\"\"\n    Read CSV file and extract all text from the 'text' column,\n    join them together, and split by sentence delimiters (. or ?)\n    \"\"\"\n    try:\n        text_content = []\n        # Read the CSV file\n        with open(csv_file, 'r', encoding='utf-8') as file:",
+        "detail": "whisperx.extract_text_from_csv",
+        "documentation": {}
+    },
+    {
+        "label": "Toeic",
+        "kind": 6,
+        "importPath": "whisperx.handle_data",
+        "description": "whisperx.handle_data",
+        "peekOfCode": "class Toeic:\n    def __init__(self, audio_file_path: Path, output_file_path: Path):\n        self.audio_file_path = audio_file_path\n        self.output_file_path = output_file_path\n        self.segments = []\n        self.segments_docs = []\n        self.delay_duration = 0  # 0 seconds in milliseconds\n    def create_doc(self):\n        \"\"\"Create a document with all segments\"\"\"\n        try:",
+        "detail": "whisperx.handle_data",
+        "documentation": {}
+    },
+    {
+        "label": "audio_file_path",
+        "kind": 5,
+        "importPath": "whisperx.handle_data",
+        "description": "whisperx.handle_data",
+        "peekOfCode": "audio_file_path = \"../assets/Actual Test 05.mp3\"  # 👈 Change this to your file's path\noutput_file_path = \"Actual Test 05.csv\"  # 👈 Change this to your desired output file path\noutput_folder = \"output\"\noutput_doc = \"output_doc.txt\"  # Folder to save individual question audio files\nclass Toeic:\n    def __init__(self, audio_file_path: Path, output_file_path: Path):\n        self.audio_file_path = audio_file_path\n        self.output_file_path = output_file_path\n        self.segments = []\n        self.segments_docs = []",
+        "detail": "whisperx.handle_data",
+        "documentation": {}
+    },
+    {
+        "label": "output_file_path",
+        "kind": 5,
+        "importPath": "whisperx.handle_data",
+        "description": "whisperx.handle_data",
+        "peekOfCode": "output_file_path = \"Actual Test 05.csv\"  # 👈 Change this to your desired output file path\noutput_folder = \"output\"\noutput_doc = \"output_doc.txt\"  # Folder to save individual question audio files\nclass Toeic:\n    def __init__(self, audio_file_path: Path, output_file_path: Path):\n        self.audio_file_path = audio_file_path\n        self.output_file_path = output_file_path\n        self.segments = []\n        self.segments_docs = []\n        self.delay_duration = 0  # 0 seconds in milliseconds",
+        "detail": "whisperx.handle_data",
+        "documentation": {}
+    },
+    {
+        "label": "output_folder",
+        "kind": 5,
+        "importPath": "whisperx.handle_data",
+        "description": "whisperx.handle_data",
+        "peekOfCode": "output_folder = \"output\"\noutput_doc = \"output_doc.txt\"  # Folder to save individual question audio files\nclass Toeic:\n    def __init__(self, audio_file_path: Path, output_file_path: Path):\n        self.audio_file_path = audio_file_path\n        self.output_file_path = output_file_path\n        self.segments = []\n        self.segments_docs = []\n        self.delay_duration = 0  # 0 seconds in milliseconds\n    def create_doc(self):",
+        "detail": "whisperx.handle_data",
+        "documentation": {}
+    },
+    {
+        "label": "output_doc",
+        "kind": 5,
+        "importPath": "whisperx.handle_data",
+        "description": "whisperx.handle_data",
+        "peekOfCode": "output_doc = \"output_doc.txt\"  # Folder to save individual question audio files\nclass Toeic:\n    def __init__(self, audio_file_path: Path, output_file_path: Path):\n        self.audio_file_path = audio_file_path\n        self.output_file_path = output_file_path\n        self.segments = []\n        self.segments_docs = []\n        self.delay_duration = 0  # 0 seconds in milliseconds\n    def create_doc(self):\n        \"\"\"Create a document with all segments\"\"\"",
+        "detail": "whisperx.handle_data",
+        "documentation": {}
+    },
+    {
+        "label": "current_dir",
+        "kind": 5,
+        "importPath": "whisperx.run",
+        "description": "whisperx.run",
+        "peekOfCode": "current_dir = Path.cwd()\n# Config\nwhisper_url = \"http://localhost:9000/asr\"\naudio_input = input(\"Enter the path to the audio file: \")\naudio_file_path = f\"{current_dir}/shared-volume/{audio_input if audio_input else 'audio.mp3'}\"  # file gốc\nchunk_length_ms = 10 * 60 * 1000  # 10 phút\nparams = {\n    \"encode\": \"true\",\n    \"task\": \"transcribe\",\n    \"language\": \"en\",",
+        "detail": "whisperx.run",
+        "documentation": {}
+    },
+    {
+        "label": "whisper_url",
+        "kind": 5,
+        "importPath": "whisperx.run",
+        "description": "whisperx.run",
+        "peekOfCode": "whisper_url = \"http://localhost:9000/asr\"\naudio_input = input(\"Enter the path to the audio file: \")\naudio_file_path = f\"{current_dir}/shared-volume/{audio_input if audio_input else 'audio.mp3'}\"  # file gốc\nchunk_length_ms = 10 * 60 * 1000  # 10 phút\nparams = {\n    \"encode\": \"true\",\n    \"task\": \"transcribe\",\n    \"language\": \"en\",\n    \"output\": \"json\",\n    \"temperature\": 0.0",
+        "detail": "whisperx.run",
+        "documentation": {}
+    },
+    {
+        "label": "audio_input",
+        "kind": 5,
+        "importPath": "whisperx.run",
+        "description": "whisperx.run",
+        "peekOfCode": "audio_input = input(\"Enter the path to the audio file: \")\naudio_file_path = f\"{current_dir}/shared-volume/{audio_input if audio_input else 'audio.mp3'}\"  # file gốc\nchunk_length_ms = 10 * 60 * 1000  # 10 phút\nparams = {\n    \"encode\": \"true\",\n    \"task\": \"transcribe\",\n    \"language\": \"en\",\n    \"output\": \"json\",\n    \"temperature\": 0.0\n}",
+        "detail": "whisperx.run",
+        "documentation": {}
+    },
+    {
+        "label": "audio_file_path",
+        "kind": 5,
+        "importPath": "whisperx.run",
+        "description": "whisperx.run",
+        "peekOfCode": "audio_file_path = f\"{current_dir}/shared-volume/{audio_input if audio_input else 'audio.mp3'}\"  # file gốc\nchunk_length_ms = 10 * 60 * 1000  # 10 phút\nparams = {\n    \"encode\": \"true\",\n    \"task\": \"transcribe\",\n    \"language\": \"en\",\n    \"output\": \"json\",\n    \"temperature\": 0.0\n}\n# Tạo thư mục tạm để lưu chunk",
+        "detail": "whisperx.run",
+        "documentation": {}
+    },
+    {
+        "label": "chunk_length_ms",
+        "kind": 5,
+        "importPath": "whisperx.run",
+        "description": "whisperx.run",
+        "peekOfCode": "chunk_length_ms = 10 * 60 * 1000  # 10 phút\nparams = {\n    \"encode\": \"true\",\n    \"task\": \"transcribe\",\n    \"language\": \"en\",\n    \"output\": \"json\",\n    \"temperature\": 0.0\n}\n# Tạo thư mục tạm để lưu chunk\nos.makedirs(\"chunks\", exist_ok=True)",
+        "detail": "whisperx.run",
+        "documentation": {}
+    },
+    {
+        "label": "params",
+        "kind": 5,
+        "importPath": "whisperx.run",
+        "description": "whisperx.run",
+        "peekOfCode": "params = {\n    \"encode\": \"true\",\n    \"task\": \"transcribe\",\n    \"language\": \"en\",\n    \"output\": \"json\",\n    \"temperature\": 0.0\n}\n# Tạo thư mục tạm để lưu chunk\nos.makedirs(\"chunks\", exist_ok=True)\n# Load audio",
+        "detail": "whisperx.run",
+        "documentation": {}
+    },
+    {
+        "label": "audio",
+        "kind": 5,
+        "importPath": "whisperx.run",
+        "description": "whisperx.run",
+        "peekOfCode": "audio = AudioSegment.from_file(audio_file_path)\nduration_ms = len(audio)\nprint(f\"📏 Audio length: {duration_ms/1000:.2f} seconds\")\nall_results = []\noffset_seconds = 0.0\nsegment_id = 1\n# Cắt thành các chunk 10 phút\nfor i in range(0, duration_ms, chunk_length_ms):\n    chunk = audio[i:i + chunk_length_ms]\n    chunk_filename = f\"chunks/chunk_{i//chunk_length_ms}.wav\"",
+        "detail": "whisperx.run",
+        "documentation": {}
+    },
+    {
+        "label": "duration_ms",
+        "kind": 5,
+        "importPath": "whisperx.run",
+        "description": "whisperx.run",
+        "peekOfCode": "duration_ms = len(audio)\nprint(f\"📏 Audio length: {duration_ms/1000:.2f} seconds\")\nall_results = []\noffset_seconds = 0.0\nsegment_id = 1\n# Cắt thành các chunk 10 phút\nfor i in range(0, duration_ms, chunk_length_ms):\n    chunk = audio[i:i + chunk_length_ms]\n    chunk_filename = f\"chunks/chunk_{i//chunk_length_ms}.wav\"\n    chunk.export(chunk_filename, format=\"wav\")",
+        "detail": "whisperx.run",
+        "documentation": {}
+    },
+    {
+        "label": "all_results",
+        "kind": 5,
+        "importPath": "whisperx.run",
+        "description": "whisperx.run",
+        "peekOfCode": "all_results = []\noffset_seconds = 0.0\nsegment_id = 1\n# Cắt thành các chunk 10 phút\nfor i in range(0, duration_ms, chunk_length_ms):\n    chunk = audio[i:i + chunk_length_ms]\n    chunk_filename = f\"chunks/chunk_{i//chunk_length_ms}.wav\"\n    chunk.export(chunk_filename, format=\"wav\")\n    print(f\"✂️ Exported {chunk_filename}\")\n    try:",
+        "detail": "whisperx.run",
+        "documentation": {}
+    },
+    {
+        "label": "offset_seconds",
+        "kind": 5,
+        "importPath": "whisperx.run",
+        "description": "whisperx.run",
+        "peekOfCode": "offset_seconds = 0.0\nsegment_id = 1\n# Cắt thành các chunk 10 phút\nfor i in range(0, duration_ms, chunk_length_ms):\n    chunk = audio[i:i + chunk_length_ms]\n    chunk_filename = f\"chunks/chunk_{i//chunk_length_ms}.wav\"\n    chunk.export(chunk_filename, format=\"wav\")\n    print(f\"✂️ Exported {chunk_filename}\")\n    try:\n        # Gửi chunk tới Whisper",
+        "detail": "whisperx.run",
+        "documentation": {}
+    },
+    {
+        "label": "segment_id",
+        "kind": 5,
+        "importPath": "whisperx.run",
+        "description": "whisperx.run",
+        "peekOfCode": "segment_id = 1\n# Cắt thành các chunk 10 phút\nfor i in range(0, duration_ms, chunk_length_ms):\n    chunk = audio[i:i + chunk_length_ms]\n    chunk_filename = f\"chunks/chunk_{i//chunk_length_ms}.wav\"\n    chunk.export(chunk_filename, format=\"wav\")\n    print(f\"✂️ Exported {chunk_filename}\")\n    try:\n        # Gửi chunk tới Whisper\n        with open(chunk_filename, \"rb\") as audio_file:",
+        "detail": "whisperx.run",
+        "documentation": {}
+    },
+    {
+        "label": "csv_file_path",
+        "kind": 5,
+        "importPath": "whisperx.run",
+        "description": "whisperx.run",
+        "peekOfCode": "csv_file_path = f\"{current_dir}/whisperx/raw.csv\"\nwith open(csv_file_path, \"w\", newline=\"\", encoding=\"utf-8\") as csvfile:\n    writer = csv.writer(csvfile)\n    writer.writerow([\"id\", \"start\", \"end\", \"text\"])\n    writer.writerows(all_results)\nprint(f\"✅ Done! Saved merged transcription to {csv_file_path}\")",
+        "detail": "whisperx.run",
+        "documentation": {}
+    },
+    {
+        "label": "extract_exercise_patterns",
+        "kind": 2,
+        "importPath": "whisperx.split_audio_by_exercises",
+        "description": "whisperx.split_audio_by_exercises",
+        "peekOfCode": "def extract_exercise_patterns(csv_file: str) -> List[Tuple[str, float, float]]:\n    \"\"\"\n    Extract Exercise + Page patterns with their timestamps from CSV file\n    Returns list of tuples: (pattern_name, start_time, end_time)\n    \"\"\"\n    # Read CSV file\n    df = pd.read_csv(csv_file)\n    # Pattern to match \"Exercise X Page Y\" (with various formats)\n    pattern = re.compile(r'Exercise\\s+(\\d+).*?Page\\s+(\\d+)', re.IGNORECASE)\n    exercises = []",
+        "detail": "whisperx.split_audio_by_exercises",
+        "documentation": {}
+    },
+    {
+        "label": "split_audio_by_exercises",
+        "kind": 2,
+        "importPath": "whisperx.split_audio_by_exercises",
+        "description": "whisperx.split_audio_by_exercises",
+        "peekOfCode": "def split_audio_by_exercises(audio_file: str, exercises: List[Tuple[str, float, float]], \n                           output_dir: str = \"exercise_chunks\"):\n    \"\"\"\n    Split audio file into chunks based on exercise patterns\n    Each chunk goes from one exercise pattern until the next exercise pattern\n    \"\"\"\n    # Load audio file\n    print(f\"Loading audio file: {audio_file}\")\n    audio = AudioSegment.from_file(audio_file)\n    audio_duration = len(audio) / 1000.0  # Convert to seconds",
+        "detail": "whisperx.split_audio_by_exercises",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "whisperx.split_audio_by_exercises",
+        "description": "whisperx.split_audio_by_exercises",
+        "peekOfCode": "def main():\n    # File paths\n    csv_file = \"/Users/binhcodev/Documents/Works/python/translate-audio/whisperx/output_merged.csv\"\n    audio_file = \"/Users/binhcodev/Documents/Works/python/translate-audio/downloads/Right On.mp3\"\n    output_dir = \"/Users/binhcodev/Documents/Works/python/translate-audio/whisperx/exercise_chunks\"\n    print(\"=== Extracting Exercise patterns from CSV ===\")\n    exercises = extract_exercise_patterns(csv_file)\n    if not exercises:\n        print(\"No exercise patterns found!\")\n        return",
+        "detail": "whisperx.split_audio_by_exercises",
+        "documentation": {}
+    },
+    {
+        "label": "extract_exercise_patterns",
+        "kind": 2,
+        "importPath": "whisperx.thu_right_on",
+        "description": "whisperx.thu_right_on",
+        "peekOfCode": "def extract_exercise_patterns(csv_file: str) -> List[Tuple[str, float, float]]:\n    \"\"\"\n    Extract Exercise + Page patterns with their timestamps from CSV file\n    Returns list of tuples: (pattern_name, start_time, end_time)\n    Handles cases where Exercise and Page are in consecutive rows\n    \"\"\"\n    # Read CSV file\n    df = pd.read_csv(csv_file)\n    # Pattern to match \"Exercise X Page Y\" in same text\n    combined_pattern = re.compile(r'Exercise\\s+(\\d+).*?Page\\s+(\\d+)', re.IGNORECASE)",
+        "detail": "whisperx.thu_right_on",
+        "documentation": {}
+    },
+    {
+        "label": "parse_chunk_input",
+        "kind": 2,
+        "importPath": "whisperx.thu_right_on",
+        "description": "whisperx.thu_right_on",
+        "peekOfCode": "def parse_chunk_input(chunk_input: str) -> Tuple[int, int]:\n    \"\"\"\n    Parse chunk input in format \"exercise_num-page_num\" \n    Example: \"1-105\" returns (1, 105) for Exercise_1_Page_105\n    \"\"\"\n    try:\n        parts = chunk_input.split('-')\n        if len(parts) != 2:\n            raise ValueError(\"Input format should be 'exercise_num-page_num'\")\n        exercise_num = int(parts[0])",
+        "detail": "whisperx.thu_right_on",
+        "documentation": {}
+    },
+    {
+        "label": "find_specific_exercise",
+        "kind": 2,
+        "importPath": "whisperx.thu_right_on",
+        "description": "whisperx.thu_right_on",
+        "peekOfCode": "def find_specific_exercise(exercises: List[Tuple[str, float, float]], exercise_num: int, page_num: int) -> Tuple[str, float, float]:\n    \"\"\"\n    Find a specific exercise by exercise number and page number\n    \"\"\"\n    target_name = f\"Exercise_{exercise_num}_Page_{page_num}\"\n    for exercise in exercises:\n        name, start, end, text = exercise\n        if name == target_name:\n            return exercise\n    raise ValueError(f\"Exercise {exercise_num} Page {page_num} not found in the data\")",
+        "detail": "whisperx.thu_right_on",
+        "documentation": {}
+    },
+    {
+        "label": "split_specific_exercise",
+        "kind": 2,
+        "importPath": "whisperx.thu_right_on",
+        "description": "whisperx.thu_right_on",
+        "peekOfCode": "def split_specific_exercise(audio_file: str, target_exercise: Tuple[str, float, float], \n                          all_exercises: List[Tuple[str, float, float]], \n                          output_dir: str = \"exercise_chunks\"):\n    \"\"\"\n    Split audio for a specific exercise only\n    \"\"\"\n    # Load audio file\n    print(f\"Loading audio file: {audio_file}\")\n    audio = AudioSegment.from_file(audio_file)\n    audio_duration = len(audio) / 1000.0  # Convert to seconds",
+        "detail": "whisperx.thu_right_on",
+        "documentation": {}
+    },
+    {
+        "label": "split_audio_by_exercises",
+        "kind": 2,
+        "importPath": "whisperx.thu_right_on",
+        "description": "whisperx.thu_right_on",
+        "peekOfCode": "def split_audio_by_exercises(audio_file: str, exercises: List[Tuple[str, float, float]], \n                           output_dir: str = \"exercise_chunks\"):\n    \"\"\"\n    Split audio file into chunks based on exercise patterns\n    Each chunk goes from one exercise pattern until the next exercise pattern\n    \"\"\"\n    # Load audio file\n    print(f\"Loading audio file: {audio_file}\")\n    audio = AudioSegment.from_file(audio_file)\n    audio_duration = len(audio) / 1000.0  # Convert to seconds",
+        "detail": "whisperx.thu_right_on",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "whisperx.thu_right_on",
+        "description": "whisperx.thu_right_on",
+        "peekOfCode": "def main():\n    # File paths\n    csv_file = \"output_merged.csv\"\n    audio_file = \"../downloads/Right On 7.mp3\"\n    output_dir = \"exercise_chunks\"\n    print(\"=== Audio Splitter by Exercise Patterns ===\")\n    print(\"Options:\")\n    print(\"1. Enter 'all' to process all exercises\")\n    print(\"2. Enter 'exercise_num-page_num' to process specific exercise (e.g., '1-105' for Exercise 1 Page 105)\")\n    print(\"3. Press Enter to process all exercises (default)\")",
+        "detail": "whisperx.thu_right_on",
+        "documentation": {}
+    },
+    {
+        "label": "AudioApp",
+        "kind": 6,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "class AudioApp(QWidget):\n    def __init__(self):\n        super().__init__()\n        self.setWindowTitle(\"🎧 Audio JSON Exporter\")\n        self.setMinimumSize(600, 500)\n        self.conn = sqlite3.connect(DB_PATH)\n        self.create_table()\n        self.layout = QVBoxLayout()\n        self.name_input = QLineEdit()\n        self.name_input.setPlaceholderText(\"Enter a record name\")",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "DB_PATH",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "DB_PATH = \"db.sqlite3\"\nclass AudioApp(QWidget):\n    def __init__(self):\n        super().__init__()\n        self.setWindowTitle(\"🎧 Audio JSON Exporter\")\n        self.setMinimumSize(600, 500)\n        self.conn = sqlite3.connect(DB_PATH)\n        self.create_table()\n        self.layout = QVBoxLayout()\n        self.name_input = QLineEdit()",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "url",
+        "kind": 5,
+        "importPath": "download_audio_youtube",
+        "description": "download_audio_youtube",
+        "peekOfCode": "url = input(\"Enter YouTube URL: \")\nydl_opts = {\n    \"format\": \"m4a/bestaudio/best\",  # try m4a first, fallback to bestaudio\n    \"outtmpl\": \"assets/%(title)s.%(ext)s\",\n    \"postprocessors\": [\n        {\n            \"key\": \"FFmpegExtractAudio\",\n            \"preferredcodec\": \"mp3\",\n            \"preferredquality\": \"192\",\n        }",
+        "detail": "download_audio_youtube",
+        "documentation": {}
+    },
+    {
+        "label": "ydl_opts",
+        "kind": 5,
+        "importPath": "download_audio_youtube",
+        "description": "download_audio_youtube",
+        "peekOfCode": "ydl_opts = {\n    \"format\": \"m4a/bestaudio/best\",  # try m4a first, fallback to bestaudio\n    \"outtmpl\": \"assets/%(title)s.%(ext)s\",\n    \"postprocessors\": [\n        {\n            \"key\": \"FFmpegExtractAudio\",\n            \"preferredcodec\": \"mp3\",\n            \"preferredquality\": \"192\",\n        }\n    ],",
+        "detail": "download_audio_youtube",
+        "documentation": {}
+    },
+    {
+        "label": "text_to_audio",
+        "kind": 2,
+        "importPath": "enhanced_speak_my_self",
+        "description": "enhanced_speak_my_self",
+        "peekOfCode": "def text_to_audio(vi_line, en_line, index):\n    \"\"\"Create audio for a Vietnamese-English pair\"\"\"\n    vi_tts = gTTS(vi_line, lang='vi')\n    en_tts = gTTS(en_line, lang='en')\n    vi_path = f\"temp_vi_{index}.mp3\"\n    en_path = f\"temp_en_{index}.mp3\"\n    vi_tts.save(vi_path)\n    en_tts.save(en_path)\n    vi_audio = AudioSegment.from_file(vi_path)\n    en_audio = AudioSegment.from_file(en_path)",
+        "detail": "enhanced_speak_my_self",
+        "documentation": {}
+    },
+    {
+        "label": "create_progressive_audio_files",
+        "kind": 2,
+        "importPath": "enhanced_speak_my_self",
+        "description": "enhanced_speak_my_self",
+        "peekOfCode": "def create_progressive_audio_files(lines, output_folder=\"enhanced_output\"):\n    \"\"\"Create progressive audio files with combinations\"\"\"\n    # Create output directory\n    os.makedirs(output_folder, exist_ok=True)\n    # Check valid format\n    if len(lines) % 2 != 0:\n        raise ValueError(\"⚠️ File input.txt must contain even number of lines (each 2 lines is 1 bilingual pair).\")\n    # Convert lines to pairs\n    pairs = []\n    for i in range(0, len(lines), 2):",
+        "detail": "enhanced_speak_my_self",
+        "documentation": {}
+    },
+    {
+        "label": "create_final_merged_file",
+        "kind": 2,
+        "importPath": "enhanced_speak_my_self",
+        "description": "enhanced_speak_my_self",
+        "peekOfCode": "def create_final_merged_file(lines, output_folder=\"enhanced_output\", final_number=999):\n    \"\"\"Create one final file with all pairs\"\"\"\n    print(\"\\n🔄 Creating final merged file...\")\n    final_audio = AudioSegment.empty()\n    for i in range(0, len(lines), 2):\n        vi = lines[i]\n        en = lines[i+1]\n        print(f\"🎤 Adding pair {i//2 + 1}: {vi[:30]}... / {en[:30]}...\")\n        pair_audio = text_to_audio(vi, en, f\"final_{i//2}\")\n        final_audio += pair_audio",
+        "detail": "enhanced_speak_my_self",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "enhanced_speak_my_self",
+        "description": "enhanced_speak_my_self",
+        "peekOfCode": "def main():\n    # Configuration\n    input_file = \"input-02.txt\"\n    output_folder = \"enhanced_output\"\n    print(f\"📖 Reading {input_file}...\")\n    # Read input file\n    try:\n        with open(input_file, \"r\", encoding=\"utf-8\") as f:\n            lines = [line.strip() for line in f if line.strip()]\n    except FileNotFoundError:",
+        "detail": "enhanced_speak_my_self",
+        "documentation": {}
+    },
+    {
+        "label": "convert_json_to_csv",
+        "kind": 2,
+        "importPath": "json_to_csv_converter",
+        "description": "json_to_csv_converter",
+        "peekOfCode": "def convert_json_to_csv(json_file_path, csv_file_path=None):\n    \"\"\"\n    Convert JSON file with fragments to CSV format with columns: id, start, end, text\n    Args:\n        json_file_path (str): Path to the input JSON file\n        csv_file_path (str): Path to the output CSV file (optional)\n    \"\"\"\n    # If no CSV path provided, create one based on JSON filename\n    if csv_file_path is None:\n        base_name = os.path.splitext(json_file_path)[0]",
+        "detail": "json_to_csv_converter",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "json_to_csv_converter",
+        "description": "json_to_csv_converter",
+        "peekOfCode": "def main():\n    \"\"\"\n    Main function to handle command line usage or direct file conversion\n    \"\"\"\n    import sys\n    if len(sys.argv) > 1:\n        # Command line usage\n        json_file = sys.argv[1]\n        csv_file = sys.argv[2] if len(sys.argv) > 2 else None\n        convert_json_to_csv(json_file, csv_file)",
+        "detail": "json_to_csv_converter",
+        "documentation": {}
+    },
+    {
+        "label": "is_vietnamese_line",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def is_vietnamese_line(line):\n    return any(char in VIETNAMESE_CHARS for char in line.lower())\ndef is_question_number_or_title(line):\n    stripped = line.strip()\n    return (\n        re.match(r\"^\\*{0,2}\\d+([–-]\\d+)?(.*?)\\*{0,2}$\", stripped) or stripped.isdigit()\n    )\ndef is_title_line(line):\n    return re.match(r\"^\\d{2,3}([–-]\\d{2,3})?(\\.| refer)\", line.strip()) is not None\ndef split_raw_to_english_vietnamese(input_path=\"raw.txt\", en_path=\"temp.txt\",final_line=None):",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "is_question_number_or_title",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def is_question_number_or_title(line):\n    stripped = line.strip()\n    return (\n        re.match(r\"^\\*{0,2}\\d+([–-]\\d+)?(.*?)\\*{0,2}$\", stripped) or stripped.isdigit()\n    )\ndef is_title_line(line):\n    return re.match(r\"^\\d{2,3}([–-]\\d{2,3})?(\\.| refer)\", line.strip()) is not None\ndef split_raw_to_english_vietnamese(input_path=\"raw.txt\", en_path=\"temp.txt\",final_line=None):\n    with open(input_path, \"r\", encoding=\"utf-8\") as f:\n        lines = [line.strip() for line in f if line.strip()]",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "is_title_line",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def is_title_line(line):\n    return re.match(r\"^\\d{2,3}([–-]\\d{2,3})?(\\.| refer)\", line.strip()) is not None\ndef split_raw_to_english_vietnamese(input_path=\"raw.txt\", en_path=\"temp.txt\",final_line=None):\n    with open(input_path, \"r\", encoding=\"utf-8\") as f:\n        lines = [line.strip() for line in f if line.strip()]\n    en_lines = []\n    vn_lines = []\n    for line in lines:\n        if is_title_line(line):\n            raw_title = re.sub(r\"[–—-]\", \" to \", line)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "split_raw_to_english_vietnamese",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def split_raw_to_english_vietnamese(input_path=\"raw.txt\", en_path=\"temp.txt\",final_line=None):\n    with open(input_path, \"r\", encoding=\"utf-8\") as f:\n        lines = [line.strip() for line in f if line.strip()]\n    en_lines = []\n    vn_lines = []\n    for line in lines:\n        if is_title_line(line):\n            raw_title = re.sub(r\"[–—-]\", \" to \", line)\n            en_lines.append(f\"questions {raw_title}\")\n        elif is_vietnamese_line(line):",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "create_combined_audio",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def create_combined_audio(\n    vn_texts,\n    en_audio_path=\"audio.mp3\",\n    json_path=\"output.json\",\n    out_path=\"output_final.mp3\",\n    time_stop=0,\n):\n    delay = AudioSegment.silent(duration=5000)\n    output = AudioSegment.empty()\n    # Cắt tiếng Anh theo json",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "run_aeneas",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def run_aeneas(audio_path=\"audio.mp3\", text_path=\"temp.txt\", output_json=\"output.json\"):\n    cmd = [\n        \"python3\",\n        \"-m\",\n        \"aeneas.tools.execute_task\",\n        audio_path,\n        text_path,\n        \"task_language=eng|os_task_file_format=json|is_text_type=plain\",\n        output_json,\n    ]",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "VIETNAMESE_CHARS",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "VIETNAMESE_CHARS = \"àáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợởỡùúụủũưừứựửữỳýỵỷỹđ\"\ndef is_vietnamese_line(line):\n    return any(char in VIETNAMESE_CHARS for char in line.lower())\ndef is_question_number_or_title(line):\n    stripped = line.strip()\n    return (\n        re.match(r\"^\\*{0,2}\\d+([–-]\\d+)?(.*?)\\*{0,2}$\", stripped) or stripped.isdigit()\n    )\ndef is_title_line(line):\n    return re.match(r\"^\\d{2,3}([–-]\\d{2,3})?(\\.| refer)\", line.strip()) is not None",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "input_file",
+        "kind": 5,
+        "importPath": "mp4_to_mp3",
+        "description": "mp4_to_mp3",
+        "peekOfCode": "input_file = \"assets/Socializing and Parties.mp4\"\noutput_file = \"assets/Socializing and Parties.wav\"\n# Run ffmpeg command\nsubprocess.run([\n    \"ffmpeg\", \"-i\", input_file,\n    \"-vn\",          # remove video\n    \"-ab\", \"192k\",  # bitrate\n    \"-ar\", \"44100\", # sample rate\n    \"-y\",           # overwrite output file\n    output_file",
+        "detail": "mp4_to_mp3",
+        "documentation": {}
+    },
+    {
+        "label": "output_file",
+        "kind": 5,
+        "importPath": "mp4_to_mp3",
+        "description": "mp4_to_mp3",
+        "peekOfCode": "output_file = \"assets/Socializing and Parties.wav\"\n# Run ffmpeg command\nsubprocess.run([\n    \"ffmpeg\", \"-i\", input_file,\n    \"-vn\",          # remove video\n    \"-ab\", \"192k\",  # bitrate\n    \"-ar\", \"44100\", # sample rate\n    \"-y\",           # overwrite output file\n    output_file\n])",
+        "detail": "mp4_to_mp3",
+        "documentation": {}
+    },
+    {
+        "label": "text_to_audio",
+        "kind": 2,
+        "importPath": "speak_my_self",
+        "description": "speak_my_self",
+        "peekOfCode": "def text_to_audio(vi_line, en_line, index):\n    vi_tts = gTTS(vi_line, lang='vi')\n    en_tts = gTTS(en_line, lang='en')\n    vi_path = f\"temp_vi_{index}.mp3\"\n    en_path = f\"temp_en_{index}.mp3\"\n    vi_tts.save(vi_path)\n    en_tts.save(en_path)\n    vi_audio = AudioSegment.from_file(vi_path)\n    en_audio = AudioSegment.from_file(en_path)\n    silence = AudioSegment.silent(duration=5000)",
+        "detail": "speak_my_self",
+        "documentation": {}
+    },
+    {
+        "label": "final_audio",
+        "kind": 5,
+        "importPath": "speak_my_self",
+        "description": "speak_my_self",
+        "peekOfCode": "final_audio = AudioSegment.empty()\nfor i in range(0, len(lines), 2):\n    en = lines[i]\n    vi = lines[i + 1]\n    print(f\"🎤 Processing pair {i//2 + 1}: {vi} / {en}\")\n    pair_audio = text_to_audio(vi, en, i // 2)\n    final_audio += pair_audio\n# Xuất file cuối\nfinal_audio.export(\"final_output-03.wav\", format=\"wav\")\nprint(\"✅ Done! Saved as final_output-03.wav\")",
+        "detail": "speak_my_self",
+        "documentation": {}
+    },
+    {
+        "label": "change_tempo_ffmpeg",
+        "kind": 2,
+        "importPath": "speed_audio",
+        "description": "speed_audio",
+        "peekOfCode": "def change_tempo_ffmpeg(input_file, output_file, tempo):\n    if tempo < 0.5 or tempo > 2.0:\n        raise ValueError(\"Tempo must be between 0.5 and 2.0 for atempo filter\")\n    cmd = [\n        \"ffmpeg\",\n        \"-y\",  # Ghi đè file output nếu có\n        \"-i\", input_file,\n        \"-filter:a\", f\"atempo={tempo}\",\n        \"-vn\",\n        output_file",
+        "detail": "speed_audio",
+        "documentation": {}
+    }
+]
